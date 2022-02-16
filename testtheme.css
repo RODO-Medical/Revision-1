@@ -867,7 +867,15 @@ svg g text {
                     height: 27%;
                 }
             }}
-
+	@media (max-width:1366px) {
+        @media(max-height:768px) {
+        #page7 .s-carousel {
+            height: 26%;
+        }
+        #page7 .who {
+            line-height: 1vh;
+        }
+    }}
     .swiper-button-next::after, .swiper-button-prev::after {
     content: "";}
     .swiper-button-next, .swiper-button-prev {
