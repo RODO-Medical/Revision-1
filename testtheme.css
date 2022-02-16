@@ -818,6 +818,16 @@ svg g text {
     #page7 .cad img {
         width: 72%;
         height: auto;}
+        @media (max-width:1680px) {
+            @media(max-height:864px) { 
+                .who {
+                    top: 83.2%;
+                }
+                #page7 .s-carousel {
+                    height: 27%;
+                }
+    
+            }}
 
     .swiper-button-next::after, .swiper-button-prev::after {
     content: "";}
@@ -830,6 +840,8 @@ svg g text {
             left:-4px;}
             #page7 .swiper-slide {
                 background-color: #051B27;}
+
+
 
 
 #page8 {
