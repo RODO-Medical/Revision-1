@@ -709,7 +709,7 @@ svg g text {
             #page6 .title .top-text {
                 font-size: 20px;}
             #page6 .title .subtext {
-                font-size: 16px;}
+                font-size: 15px;}
             #page6 .loc {
                 font-size: 14px;}    
             #page6 .vid-div h3 {
@@ -851,6 +851,18 @@ svg g text {
                 height: 27%;
             }}
     } }
+	@media (max-width:1280px) {
+        @media(max-height:760px) {
+            #page7 .s-carousel {
+                height: 27%;
+            }
+        }}
+        @media (max-width:863px) {
+            @media(max-height:760px) {
+                #page7 .s-carousel {
+                    height: 27%;
+                }
+            }}
 
     .swiper-button-next::after, .swiper-button-prev::after {
     content: "";}
