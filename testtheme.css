@@ -820,12 +820,13 @@ svg g text {
         height: auto;}
         @media (max-width:1680px) {
             @media(max-height:864px) { 
+		@media (min-width: 1627px) {
                 .who {
                     top: 83.2%;
                 }
                 #page7 .s-carousel {
                     height: 27%;
-                }
+			}}
     
             }}
 
