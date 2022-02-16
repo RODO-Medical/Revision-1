@@ -186,7 +186,7 @@ svg g text {
             .fs-vid {
                 height: 900px;
                 min-width: auto;
-                height: auto;}
+                width: auto;}
         }
         @media (max-height: 864px) {
             .swiper-main {
@@ -204,7 +204,11 @@ svg g text {
         .swiper-main {
             top: 80px;
             width: 1366px;
-            height: 688px;
+            height: 688px;}
+	    .fs-vid {
+            height: auto;
+            width: 100%;
+            min-width: 100%;
     }}}
     @media (max-width:1280px) {
         @media(max-height:720px) {
