@@ -1272,7 +1272,156 @@ overflow-y: hidden;
 }
 
 
+/****CSS for the Technology page  ************************/
 
+#tech-page {
+    width: 100vw;
+    text-align: center;}
+    #tech-page::-webkit-scrollbar {
+        display: block;
+        background-color: white;}
+        #tech-page::-webkit-scrollbar-thumb {
+            background: #888;}
+            #tech-page::-webkit-scrollbar-track {
+                background: rgb(224, 224, 224);}
+                #tech-page::-webkit-scrollbar-button {
+                    all: unset;
+                  }
+
+#page-1 {
+    position: relative;
+    margin-top: 80px;
+    width: 100vw;
+    height: auto;
+    background-color:#080808;
+    overflow: hidden;
+    color: white;}
+    #page-1 .title {
+        position: relative;
+        top: 90px;
+        width: 64vw;
+        height: auto;
+        margin: 0 auto 100px;}
+        #page-1 .title svg {
+            width: 100%;
+        }
+    #page-1 .row-wrap {
+        position: relative;
+        width: 78%; 
+        margin: auto;
+        height: 23.4vw;
+        text-align: left;
+        margin-bottom: 50px;
+}
+    #right-box {
+        text-align: right;}
+        #right-box .subtitle {
+            text-align: left;
+            margin-left: 6%;}
+            @media (max-width: 1280px) {
+                #right-box {
+                    margin: 10px 0 100px;
+                    text-align: left;
+                }
+                #right-box .subtitle {
+                    text-align: left;
+                    margin-left: 0;
+                }
+            }
+    #page-1 p {
+        position: relative;
+        text-align: left;
+        width: 78%;
+        font-size: 16px;
+        margin-bottom: 105px;
+    }
+        #page-1 .column {
+            position: relative;
+            top: 50px;
+        }
+            #page-1 .subtitle {
+                font-size: 18px;
+                margin-top: 10px;
+                font-family: 'AvenirBolder';
+            }
+            #page-1 .gif {
+                left: 45%;
+            }
+    #page-1 .pop-thumbnail {
+        width: 93.6%;}
+
+#page-2 {
+    width: 100vw;
+    height: auto;
+    background-color: white;}
+    #page-2 img {
+        width: 100%;}
+    #page-2 a {
+        color:#080808;
+        text-decoration: underline;
+    }
+    #page-2 .row-wrap {
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;}
+        #page-2 .title {
+            padding-bottom: 25px;
+            line-height: 30px;}
+        #page-2 #techPic {
+            margin-top: 25px;
+        }
+        #page-2 .col-lg-6 {
+            text-align: left;
+            margin: 95px 0px 0;
+            padding: 0 45px;
+        }
+        #page-2 .vid-div {
+            margin-top: 35px;}
+            #page-2 .vid-div {
+                width: 90%;}
+                #page-2 #lump {
+                    width: 87.88%;
+                }
+        #page-2 #logos {
+            margin: 60px 0 78px;
+        }
+        #page-2 .title .top-text {
+            font-size: 24px;
+            letter-spacing: 2px;
+            font-family: 'Rotunda', sans-serif;
+            font-weight: bold;}
+        #page-2 .title .subtext {
+            font-size: 18px;
+            font-family: 'AvenirMedium', sans-serif;
+            font-weight: normal;
+        }
+        #page-2 .lump-row {
+            margin-top: 50px;
+            width: 75%;}
+            #page-2 .loc {
+                font-size: 16px;
+                display: inline-block;
+                text-align: center;
+                font-family: 'AvenirBold';
+                margin-top: 30px;
+                width: 49%;
+            }
+        #page-2 .wrapper {
+            margin-top: 30px;
+        }
+        #page-2 .gif {
+            left:50%;
+            top: 33%;
+        }
+.col-lg-5 {
+    width: 41.67%;
+}
+@media (max-width: 1280px){
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+/*************************************************************/
 
 
 
