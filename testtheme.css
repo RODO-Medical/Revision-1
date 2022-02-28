@@ -9,26 +9,26 @@
 
 @font-face {
     font-family: 'AvenirBold';
-    src: url('fonts/Avenir LT Std 85 Heavy/Avenir LT Std 85 Heavy.otf');
+    src: url('Avenir LT Std 85 Heavy.otf');
 }
 
 @font-face {
     font-family: 'AvenirBolder';
-    src: url('fonts/Avenir LT Std 95 Black/Avenir LT Std 95 Black.otf');
+    src: url('Avenir LT Std 95 Black.otf');
 }
 
 @font-face {
     font-family: 'AvenirMedium';
-    src: url('fonts/Avenir LT Std 65 Medium/Avenir LT Std 65 Medium.otf');
+    src: url('Avenir LT Std 65 Medium.otf');
 }
 
 @font-face {
     font-family: 'AvenirRoman';
-    src: url('fonts/Avenir LT Std 55 Roman/Avenir LT Std 55 Roman.otf');
+    src: url('Avenir LT Std 55 Roman.otf');
 }
 @font-face {
     font-family: 'AvenirBook';
-    src: url('fonts/Avenir LT Std 45 Book/Avenir LT Std 45 Book.otf');
+    src: url('Avenir LT Std 45 Book.otf');
 }
 
 
@@ -38,7 +38,7 @@ html {
 
 body {
     text-align: center;
-    font-family: 'AvenirBold', 'Avenir LT Std', sans-serif;
+    font-family: 'Rotunda', 'AvenirMedium', sans-serif;
     background-color: #080808;
 }
 
