@@ -1,131 +1,254 @@
 <!DOCTYPE html>
 <html>
-<!--TODO:  
-        - Fix Navbar Collapsed form and before collapsing form
-        - Change to Mobile form at breakpoint
-        - Adjust Scalings
--->
-
-<head>
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Smileloc</title>
-    
-    <!---SwiperJS CSS-->
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    <link
-    href="https://unpkg.com/video.js@7/dist/video-js.min.css"
-    rel="stylesheet"
-    />
-    <!---Bootstrap Core CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    
-    <!---JQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-    rel="stylesheet"/>
-
-    <!---Fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
-    <link rel="stylesheet" href="fontsheet.css" />
-
-    <!---Icons-->
-    <script src="https://kit.fontawesome.com/d45cc5d9fb.js" crossorigin="anonymous"></script>
-    
-
-    <!---Magnific Popup-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    
-    <!---SwiperJS-->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    
-    <!---Theme CSS-->
-    <link href="testtheme.css" rel="stylesheet"/>
-
-    <script type="module">
-    import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
-    </script>
-    
-</head>
-
-
-
-
-<body class="scroll-stop">
-    <nav class="navbar navbar-fixed-top navbar-expand-lg">
-        <div class="container-fluid" style="height: 80px;">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" id="nav-logo" href="index.html"><img src="rodomedical-logo.png"></a>
-          </div>
-          
-          
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
-            <ul class="nav navbar-nav mr-auto navbar-right">
-              <li><a href="Technology.html">THE Technology</a></li>
-              <li><a href="TheTeam.html">THE Team</a></li>
-              <li><a href="Resource.html">Resources</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#"><img src="Icon awesome-instagram.svg"></a></li>
-              <li><a href="#"><img src="Icon awesome-facebook-square.svg"></a></li>
-              <li><a href="#"><img src="Icon simple-tiktok.svg"></a></li>
-              <li id="no-collapse"><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-          <button onclick="location.href='mailto:info@rodomedical.com'" type="button" id="nc" class="contact btn btn-sm">Contact Us</button>
-        </div><!-- /.container-fluid -->
-      </nav> 
-<!-- Slider main container -->
-<div class="swiper swiper-main">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper swiper-no-swiping">
-    <!-- Slides -->
-    <div class="swiper-slide" id="page1">
-        <div>
-            <img src="pressrelease.png" width="100%">
-        </div>
-    </div>
-    <div class="swiper-slide" id="page2">
+    <head>
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>Smileloc</title>
+        <link rel="icon" href="smileloc-icon.png" type="image/x-icon" />
+        <!---SwiperJS CSS-->
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
+        <link
+        href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+        rel="stylesheet"
+        />
+        <!---Bootstrap Core CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         
-    </div>
+        <!---JQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
     
-  
-  </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-scrollbar"></div>
-</div>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        rel="stylesheet"/>
+    
+        <!---Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+        <link rel="stylesheet" href="fontsheet.css" />
+    
+        <!---Icons-->
+        <script src="https://kit.fontawesome.com/d45cc5d9fb.js" crossorigin="anonymous"></script>
+        
+    
+        <!---Magnific Popup-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        
+        <!---SwiperJS-->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        
+        <!---Theme CSS-->
+        <link href="testtheme.css" rel="stylesheet"/>
+    
+        <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+        </script>
+        
+    </head>
+    <body id="news">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg">
+            <div class="container-fluid" style="height: 80px;">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="nav-logo" href="index.html"><img src="rodomedical-logo.png"></a>
+                </div>
+                
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+                <ul class="nav navbar-nav mr-auto navbar-right">
+                    <li><a href="Technology.html" class="linkTech">THE Technology</a></li>
+                    <li><a href="TheTeam.html">THE Team</a></li>
+                    <li><a href="Resource.html">Resources</a></li>
+                    <li><a href="News.html">News</a></li>
+                    <li class="icons"><a href="#"><img src="Icon awesome-instagram.svg"></a><a href="#"><img src="Icon awesome-facebook-square.svg"></a> <a href="#"><img src="Icon simple-tiktok.svg"></a></li>
+                    <li></li>
+                    <li></li>
+                    <li id="no-collapse"><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+                <button onclick="location.href='mailto:info@rodomedical.com'" type="button" id="nc" class="contact btn btn-sm">Contact Us</button>
+            </div><!-- /.container-fluid -->
+        </nav> 
+        <section id="press-releases">
+            <div class="title">
+                Press Releases
+                <svg>
+                    <rect width="675" height="5" fill="white"/>
+                </svg>
+            </div>
+            <div class="press-scroll">
+                <div class="article">
+                    <div class="logo col-md-2 col-xs-12">
+                        <img src="PR_Newswire.png" />
+                    </div>
+                    <a target="_blank" href="https://www.prnewswire.com/news-releases/rodo-medical-and-aurum-group-enter-into-joint-venture-agreement-to-build-rodo-digital-prosthetics-in-the-us-and-distribution-agreement-in-canada-301461626.html">
+                        <div class="headline col-md-4 col-xs-12">
+                            <span class="date">
+                                Monday, January 17, 2022
+                            </span> <br>
+                                Rodo Medical and Aurum Group enter into Joint Venture Agreement to build Rodo Digital Prosthetics in the U.S.
+                                and Distribution Agreement in Canada
+                        </div>
+                    </a>
+                    <div class="excerpt col-md-6 col-xs-12">
+                        <br>
+                        CALGARY, AB, Jan. 17, 2022 /PRNewswire/ - RODO Medical and The Aurum Group have entered a strategic partnership 
+                        to launch Rodo Digital Prosthetics (RDP) in the U.S. RDP will be a new dental laboratory combining RODO's 
+                        proprietary technologies with Aurum's Core3dcentres.
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="straumann logo col-md-2 col-xs-12">
+                        <img src="https://www.roedentallab.com/wp-content/uploads/2021/06/ROE-Logo-RGB-600x219.png" />
+                    </div>
+                    <a target="_blank" href="https://www.prnewswire.com/news-releases/rodo-medical-and-roe-dental-laboratory-are-changing-the-hole-industry-for-immediate-load-guided-full-arch-surgery-301447065.html">
+                        <div class="headline col-md-4 col-xs-12">
+                            <span class="date">
+                                Thursday, Dec. 16, 2021
+                            </span> <br>
+                                RODO MEDICAL and ROE DENTAL LABORATORY are changing the "hole" industry for immediate load guided full arch surgery
+                        </div>
+                    </a>
+                    <div class="excerpt col-md-6 col-xs-12">
+                        <br>
+                        CLEVELAND, Dec. 16, 2021 /PRNewswire/ -- RODO Medical, Inc., an innovative dental company from San Jose, CA, and 
+                        ROE Dental Laboratory, a full-service dental laboratory from Independence, OH, announce an exclusive partnership 
+                        on the distribution and marketing on the FDA-cleared and patented RODO Abutment System for surgically guided 
+                        full-arch restorations.
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="straumann logo col-md-2 col-xs-12">
+                        <img src="straumann.svg" />
+                    </div>
+                    <a target="_blank" href="https://www.prnewswire.com/news-releases/rodo-medical-and-straumann-enter-into-a-non-exclusive-global-licensing-and-distribution-agreement-301004042.html">
+                        <div class="headline col-md-4">
+                            <span class="date">
+                                Wednesday, Febuary 12, 2020 
+                            </span> <br>
+                                RODO Medical and Straumann enter into a Non-Exclusive, Global Licensing and Distribution Agreement
+                        </div>
+                    </a>
+                    <div class="excerpt col-md-6 col-xs-12">
+                        <br>
+                        SAN JOSE, Calif., Feb. 12, 2020 /PRNewswire/ — RODO Medical announced that it has entered into a non-exclusive, 
+                        global licensing and distribution agreement with Institut Straumann AG. The original agreement between the two 
+                        companies provided Straumann with distribution rights in limited jurisdictions, but with this new agreement, 
+                        Straumann will be able to distribute RODO Medical&apos;s proprietary products throughout the world. 
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="straumann logo col-md-2 col-xs-12">
+                        <img src="straumann.svg" />
+                    </div>
+                    <a target="_blank" href="https://www.prnewswire.com/news-releases/rodo-medical-and-straumann-group-enter-into-distribution-agreement-outside-north-america-straumann-increases-its-investment-in-rodo-medical-300446767.html">
+                        <div class="headline col-md-4 col-xs-12">
+                            <span class="date">
+                                Friday, April 28, 2017 
+                            </span> <br>
+                                Rodo Medical and Straumann Group enter into Distribution Agreement Outside North America; Straumann Increases
+                                Its Investment in Rodo Medical
+                        </div>
+                    </a>
+                    <div class="excerpt col-md-6 col-xs-12">
+                        <br>
+                        SAN JOSE, Calif., April 28, 2017 /PRNewswire/-- Rodo Medical and Straumann announced that Straumann has increased 
+                        its stake in Rodo Medical Inc. from 12% (obtained in 2014) to 30%, for an undisclosed sum. The agreement between 
+                        the two companies provides Straumann with exclusive distribution rights - except in North America and South Korea 
+                        - and the option to increase Straumann's participation to 51% in 2021.
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="straumann logo col-md-2 col-xs-12">
+                        <img src="FDA_logo.png" />
+                    </div>
+                    <a target="_blank" href="https://www.prnewswire.com/news-releases/fda-approves-major-advance-in-implant-dentistry--rodo-abutment-system-by-rodo-medical-inc-300369915.html">
+                        <div class="headline col-md-4 col-xs-12">
+                            <span class="date">
+                                Tuesday, November 29, 2016 
+                            </span> <br>
+                                FDA Approves Major Advance in Implant Dentistry - Rodo®Abutment System by Rodo Medical, Inc.
+                        </div>
+                    </a>
+                    <div class="excerpt col-md-6 col-xs-12">
+                        <br>
+                        SAN JOSE, Calif., Nov. 29, 2016 /PRNewswire/ -- Rodo Medical, Inc., an innovative dental device company, 
+                        announces FDA clearance of the Rodo Abutment System, featuring the shape-memory Smileloc®retentive sleeve. 
+                        The Rodo Abutment System radically simplifies the process for placing and retrieving restorations by eliminating 
+                        the need for cement or screws for retaining the prosthesis.
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="straumann logo col-md-2 col-xs-12">
+                        <img src="straumann.svg" />
+                    </div>
+                    <a target="_blank" href="https://www.marketscreener.com/quote/stock/STRAUMANN-HOLDING-AG-408695/news/Straumann-invests-in-RODO-Medical-18889483/">
+                        <div class="headline col-md-4 col-xs-12">
+                            <span class="date">
+                                Wednesday, August 13, 2014
+                            </span> <br>
+                                Straumann Invests in RODO Medical
+                        </div>
+                    </a>
+                    <div class="excerpt col-md-6 col-xs-12">
+                        <br>
+                        Basel/Sunnyvale, 13 August 2014: Straumann, a global leader in replacement, restorative and regenerative dentistry,
+                        and RODO Medical, Inc., a privately-held company developing innovative devices in dental implant restorations, 
+                        have signed an agreement under which Straumann has acquired approximately 12% of RODO Medical's shares for an 
+                        undisclosed sum.
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="straumann logo col-md-2 col-xs-12">
+                        <img src="https://www.clearchoice.com/wp-content/themes/clearchoice/dist/images/w1/ClearChoice-logo-white.png" />
+                    </div>
+                    <a target="_blank" href="https://www.biospace.com/article/releases/-b-clearchoice-management-services-b-and-b-rodo-medical-b-enter-into-strategic-alliance-in-the-u-s-/">
+                        <div class="headline col-md-4 col-xs-12">
+                            <span class="date">
+                                Wednesday, June 25, 2014
+                            </span> <br>
+                                ClearChoice Management Services and RODO Medical Enter into Strategic Alliance in the U.S.
+                        </div>
+                    </a>
+                    <div class="excerpt col-md-6 col-xs-12">
+                        <br>
+                        DENVER and SUNNYVALE, Calif., June 25, 2014 /PRNewswire-iReach/ -- ClearChoice Management Services, LLC, a 
+                        leading dental support organization (DSO) focused in the field of implant dentistry, and RODO Medical, Inc.,
+                        a private company developing innovative dental implant restoration devices, today announced a strategic alliance
+                        between the two companies.
+                    </div>
+                </div>
+            </div>
 
+        </section>
 
-    </script>
-    <script src="swiperCus.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://getbootstrap.com/docs/3.3/assets/js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="https://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js"></script>
-     <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
-
-</body>
-
-<footer>
-
-</footer>
-
+        <script src="swiperCus.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://getbootstrap.com/docs/3.3/assets/js/docs.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="https://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+        WebFont.load({
+            google: {
+            families: ['Rotunda', 'AvenirBold']
+            }
+        });
+        </script>
+    </body>
 </html>
