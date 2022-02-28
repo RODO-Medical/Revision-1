@@ -10,7 +10,15 @@
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <title>Smileloc</title>
-    
+    <link rel="icon" href="smileloc-icon.png" type="image/x-icon" />
+
+    <!---Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+    <link rel="stylesheet" href="fontsheet.css" />
+
+
     <!---SwiperJS CSS-->
     <link
     rel="stylesheet"
@@ -29,12 +37,6 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
     rel="stylesheet"/>
-
-    <!---Fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
-    <link rel="stylesheet" href="fontssheet.css" />
 
     <!---Icons-->
     <script src="https://kit.fontawesome.com/d45cc5d9fb.js" crossorigin="anonymous"></script>
@@ -56,7 +58,7 @@
 </head>
 
 
-<body>
+<body id="team">
     <nav class="navbar navbar-fixed-top navbar-expand-lg">
         <div class="container-fluid" style="height: 80px;">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -79,9 +81,7 @@
                 <li><a href="#">THE Team</a></li>
                 <li><a href="Resource.html">Resources</a></li>
                 <li><a href="News.html">News</a></li>
-                <li><a href="#"><img src="Icon awesome-instagram.svg"></a></li>
-                <li><a href="#"><img src="Icon awesome-facebook-square.svg"></a></li>
-                <li><a href="#"><img src="Icon simple-tiktok.svg"></a></li>
+                <li class="icons"><a href="#"><img src="Icon awesome-instagram.svg"></a><a href="#"><img src="Icon awesome-facebook-square.svg"></a> <a href="#"><img src="Icon simple-tiktok.svg"></a></li>
                 <li id="no-collapse"><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
             </ul>
             </div><!-- /.navbar-collapse -->
@@ -89,63 +89,375 @@
         </div><!-- /.container-fluid -->
         </nav> 
     <!-- Slider main container -->
-    <!-- <div class="swiper">
-
-        <div class="swiper-wrapper swiper-no-swiping">
-
-            <div class="swiper-slide" id="mgement-team">
-                <img src="Management.png" width="1920" height="1000">
-            </div>
-            <div class="swiper-slide" id="board-directors">
-                <img src="Board.png" width="1920" height="1000"/>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-scrollbar"></div>
-    </div> -->
+    
     <style>
         .fs-pic {
             margin-top:80px
         }
     </style>
-    <div class="fs-pic">
-        <img src="Management.png" width="100%"/>
+    <div id="CAB-page">
+        <div class="title">
+            RODO Clinical Advisory Board
+        </div>
+        <div class="row-wrap">
+            <div class="img-wrap col-lg-3 col-md-6 col-small-12" id="img-pikos">
+                <img src="PastedGraphic-1.png"> 
+                <div class="caption pikos">Co-Chair</div>
+            </div>
+            <p id="michael" class="bio pikos col-lg-3 col-md-6 col-small-12"><span class="name">Dr. Michael Pikos</span><br> <span class="position">CEO of the Pikos Institute</span><br> 
+                    Dr. Pikos is originally from Campbell, Ohio.
+                    He attended The Ohio State University where he graduated Summa Cum Laude and Phi Beta Kappa. 
+                    He also graduated with honors from The Ohio State University College of Dentistry. <br> <br>
+                    <a id="link-pikos" href="https://pikosinstitute.com/about-us/faculty-and-leadership/dr.-michael-a.-pikos/" target="_blank">Read More &nbsp; <i class="fas fa-chevron-right"></i></a></p>
+            <svg width="5" height="300">
+                <rect width="1" height="300" style="fill:rgb(125, 230, 255)"/>
+            </svg>
+                <p id="ben" class="bio wu col-lg-3 col-md-6 col-small-12"><span class="name">Dr. Benjamin Wu</span><br> <span class="position">Director for UCLA Weintraub Center for Reconstructive Biotechnology</span><br>
+                    Dr. Ben Wu is 
+                    Professor and Chair of the Division of Advanced Prosthodontics, and the Director of the Weintraub Center 
+                    for Reconstructive Biotechnology and the Executive Director of the Innovative Digital Dentistry Systems (iDDS) 
+                    at the School of Dentistry. <br> <br>
+                    <a id="link-wu" href="https://weintraubcenter.dentistry.ucla.edu/benjamin-wu" target="_blank"><i class="fas fa-chevron-left"> &nbsp;</i>  Read More  &nbsp;<i class="fas fa-chevron-right"></i></a></p>
+            <div class="img-wrap col-lg-3 col-md-6 col-small-12" id="img-wu">
+                <img src="PastedGraphic-2.png"> 
+                <div class="caption wu">Co-Chair</div>
+            </div>
+        </div>
+
+        <!---Horizontal Carousel for CAB-->
+        <div class="swiper s-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide cad">
+                    <a href="https://www.linkedin.com/in/ole-jensen-6b871512a" target="_blank"><img src="PastedGraphic-3.png"></a>
+                        <div class="who"><span class="names"><br>Dr. Ole Jensen<br></span><span class="positions">  Former Co-chair</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                   <a href="https://weintraubcenter.dentistry.ucla.edu/faculty" target="_blank"><img src="PastedGraphic-4.png"></a><div class="who"><span class="names"><br>Dr. John Beumer<br></span><span class="positions">  UCLA</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                   <a href="https://www.clearchoice.com/doctors/hans-peter-weber/" target="_blank"><img src="PastedGraphic-5.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Hans-Peter Weber</span><br> <span class="positions">ClearChoice </span></div>
+                </div>
+                <div class="swiper-slide cad">
+                    <a href="https://gidedental.com/faculty-steven-parel" target="_blank"><img src="Steve Parel.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Steve Parel<br></span><span class="positions">Baylor</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                    <a href="https://www.mayo.edu/research/centers-programs/center-regenerative-medicine/about/faculty-staff?letter=e" target="_blank"><img src="Steve Eckert.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Steve Eckert<br></span><span class="positions">Mayo</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                <a href="https://zagacenters.com/prof-dr-james-chow/" target="_blank"><img src="James Chow.png"><div class="who"></a><span class="names">&nbsp;<br>Dr. James Chow<br></span><span class="positions">DIMFC</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                <a href="https://www.aboc.com.hk/restorative-team" target="_blank"><img src="Adam Siu.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Adam Siu<br></span><span class="positions">DIMFC</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                    <a href="https://dentistry.ucla.edu/profile/shah-kumar-c" target="_blank"><img src="PastedGraphic-6.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Kumar Shah </span><br> <span class="positions">UCLA</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                <a href="https://www.cejdentistry.com/" target="_blank"><img src="PastedGraphic-7.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Curtis Jansen </span><br> <span class="positions">CEJ Dentistry</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                <a href="https://millvalleydentist.com/doctors/" target="_blank"><img src="Leo Yang.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Leo Yang<br></span></div>
+                </div>
+                <div class="swiper-slide cad">
+                    <a href="https://www.omnismile.com/copy-of-home" target="_blank"><img src="Andrew Johnson.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Andrew Johnson<br></span><span class="positions">Omnismile</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                   <a href="https://www.clearchoice.com/doctors/daniel-f-galindo/" target="_blank"><img src="Daniel Galindo.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Daniel Galindo<br></span><span class="positions">ClearChoice</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                    <a href="https://ballantynedentistry.com/dr-christian-yaste/" target="_blank"><img src="Christian Yaste.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Christian Yaste<br></span></div>
+                </div>
+                <div class="swiper-slide cad">
+                    <a href="https://actondentistry.com/dr-matthew-slaven/" target="_blank"><img src="Matthew Slaven.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Matthew Slaven<br></span><span class="positions">ROE</span></div>
+                </div>
+                 <div class="swiper-slide cad">
+                    <a href="https://www.idspringfield.com/about/cosmetic-dentist-olson/" target="_blank"><img src="Grant Olson.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Grant Olson<br></span><span class="positions">ROE</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                   <a href="http://www.dentalzero.com/news/articleView.html?idxno=4238&sitemode=" target="_blank"><img src="Jeong-Ho John Kim.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Jeong-Ho John Kim<br></span></div>
+                </div>
+                <div class="swiper-slide cad">
+                    <a href="https://www.sanjosedentist.com/about/meet-the-doctors" target="_blank"><img src="Steve Lim.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Steve Lim<br></span></div>
+                </div>
+                <div class="swiper-slide cad">
+                   <a href="https://www.professionalsindentistry.com/meet-us.html" target="_blank"><img src="David Little.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. David Little<br></span></div>
+                </div>
+                <div class="swiper-slide cad">
+                   <a href="https://www.assiniboinedentalgroup.com/site/dentists-st-james-winnipeg/dr-amarjit-rihal" target="_blank"><img src="Amarjit Rihal.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Armajit Rihal<br></span></div>
+                </div>
+                <div class="swiper-slide cad">
+                   <a href="https://www.ucsfhealth.org/providers/dr-arun-sharma" target="_blank"><img src="Arun Sharma.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Arun Sharma<br></span><span class="positions">UCSF</span></div>
+                </div>
+                <div class="swiper-slide cad">
+                    <a href="https://floridaprosthodontics.com/dr-sundeep-rawal/" target="_blank"><img src="Sundeep Rawal.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Sundeep Rawal<br></span><span class="positions"></span></div>
+                 </div>
+                 <div class="swiper-slide cad">
+                    <a href="https://www.kadridental.ca/" target="_blank"><img src="Kareem Kadri.png"></a><div class="who"><span class="names">&nbsp;<br>Dr. Kareem Kadri<br></span><span class="positions"></span></div>
+                 </div>
+            </div>
+            <div class="swiper-button-next"><i id="rightarrow" class="fas fa-chevron-right"></i></div>
+            <div class="swiper-button-prev"><i id="leftarrow" class="fas fa-chevron-left"></i></div>
+          </div> 
+       
     </div>
-    <div class="fs-pic">
-        <img src="Board.png" width="100%"/>
+    <div id="management" class="fs-pic">
+        <!-- <img src="Management.png" width="100%"/> -->
+        <div class="title">
+            Management Team &nbsp;|
+        </div>
+        
+        <div class="swiper manage-scroll">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div id="ceo" class="management-member">
+                        <div class="name">
+                            <span class="bold">Young Seo,</span> CEO
+                        </div>
+                        <div class="bio">
+                            <span class="cred">PhD, Co-Founder and Chief Executive Officer </span><br>
+                            Dr. Seo has over 15 years of experience as an entrepreneur. 
+                            Prior to RODO Medical, he co-founded Enview Technologies in the automotive industry with his serial 
+                            co-founding partner, Mike Winzeler. Enview&apos;s technologies were sold to Daimler Chrysler and Whirlpool.
+                        </div>
+                    </div>
+                    <div id="president" class="management-member">
+                        <div class="name">
+                            <span class="bold">Mike Girard,</span> President
+                        </div>
+                        <div class="bio">
+                            <span class="cred">RDP, President</span><br>
+                             Mr. Girard brings over 40 years of experience in launching and building successful digital 
+                            companies in dentistry, including CEO of Microdental, Nobel Procera as part of Nobel Biocare&apos;s Global 
+                            Management Team, Brontes Technologies, which was acquired by 3M, and Diadem Precision Technology, which was 
+                            acquired by Ivoclar-Vivadent.
+                        </div>
+                    </div>
+                    <div id="cco" class="management-member">
+                        <div class="name">
+                            <span class="bold">Ben Wu,</span> CCO
+                        </div>
+                        <div class="bio">
+                            <span class="cred">DDS, PhD, Chief Clinical Officer and Co-Chair of RODO Clinical Advisory Board </span><br>
+                             Dr. Wu is an accomplished prosthodontist and PhD scholar. He currently serves as Chair of UCLA Division of 
+                             Advanced Prosthodontics, Chair of Biomaterials Science and Executive Director of UCLA Innovative Digital 
+                             Dentistry Systems. Dr. Wu received his Engineering PhD from MIT and Advanced Prosthodontics from Harvard 
+                             University.
+                        </div>
+                    </div>
+                    <div id="vp-of-cr" class="management-member">
+                        <div class="name">
+                            <span class="bold">Veronika Jedlicka,</span> VP Client Relations
+                        </div>
+                        <div class="bio">
+                            <span class="cred">Vice President of Client Relations </span><br>
+                             Ms. Jedlicka has more than 15 years of experience in the medical device  industry and joined RODO Medical 
+                             in August 2017. She has held various management roles including sales/marketing, customer onboarding and 
+                             education, and overseeing new product launches and operations. Ms. Jedlicka holds a degree in Registered 
+                             Nursing.
+                        </div>
+                    </div>
+                    <div id="vpo" class="management-member">
+                        <div class="name">
+                            <span class="bold">James Park,</span> VP Operations
+                        </div>
+                        <div class="bio">
+                            <span class="cred">MS, Vice President of Operation</span><br>
+                             Mr. Park was the #2 employee of RODO Medical and has over 15 years of experience in R&D, Manufacturing, 
+                             QA and Regulatory Affairs in the medical device industry at startup companies. He holds a dual BSE in 
+                             Aerospace Engineering and Computer Science from University of Michigan, and an MSE in Aerospace Engineering 
+                             from Georgia Institute of Technology.
+                        </div>
+                    </div>
+                    <div id="vpo" class="management-member">
+                        <div class="name">
+                            <span class="bold">Bill Hodges,</span> VP Business Development RDP
+
+                        </div>
+                        <div class="bio">
+                            <span class="cred">Vice President of Business Development RDP</span><br>
+                            Mr. Hodges has over 10 years of experience in executive and sales management in the hospital and healthcare 
+                            industry. Over the past 7 years Mr. Hodges has been developing and supporting dentists, support staff and 
+                            dental labs in the Midwest region at Aurum Group and Microdental. Mr. Hodges holds a Biological Science degree
+                            from Wayne State University.
+                        </div>
+                    </div>
+                    <div id="vpo" class="management-member">
+                        <div class="name">
+                            <span class="bold">Jessica Degroat,</span> VP Operation RDP
+                        </div>
+                        <div class="bio">
+                            <span class="cred">Vice President of Operation RDP</span><br>
+                            Ms. Degroat has been promoted to the current role after the acquisition of CORE3d by RODO Medical. Prior 
+                            to the promotion, she had been the Operations Manager at the HQs and its facility in Troy, MI since 2009.  
+                            She has been instrumental in maintaining daily operations and generating stead growth annually while directly
+                             reporting to the president. Ms. Degroat holds a degree in Business Administration from Wayne State University.   
+                        </div>
+                    </div>
+                    <div id="vpo" class="management-member">
+                        <div class="name">
+                            <span class="bold">Dan Meyers,</span> General Counsel
+                        </div>
+                        <div class="bio">
+                            <span class="cred">JD, General Counsel</span><br>
+                             Mr. Meyers has spent 25 years advising private and public technology companies in mergers and acquisitions,
+                             licensing and commercial transactions, private financing transactions and corporate governance, both as a
+                             partner in a major national law firm and in solo practice.  Dan received his J.D. from Harvard Law School.
+                        </div>
+                    </div>
+                    <div id="vpo" class="management-member">
+                        <div class="name">
+                            <span class="bold">Arman Pahlavan, </span>Corporate Counsel
+                        </div>
+                        <div class="bio">
+                            <span class="cred">JD, Corporate Counsel at Perkins Coie</span><br>
+                            Mr. Pahlavan has extensive experience advising corporate clients in cross border transactions, including 
+                            their listings on U.S. and international stock exchanges. His knowledge encompasses a range of industries 
+                            including software/mobile, AR/VR, cryptocurrencies/blockchain, digital health/life sciences, and energy 
+                            technologies.
+                        </div>
+                    </div>
+                    <div id="vpo" class="management-member">
+                        <div class="name">
+                            <span class="bold">Sheri Haynes,</span>  Corporate Controller
+                        </div>
+                        <div class="bio">
+                            <span class="cred">Corporate Controller</span><br>
+                            Ms. Haynes has more than 20 years of controller-level experience for venture-backed medical device companies 
+                            from inception to initial product launch to final liquidity event, including IPOs.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="scroll-arrow" style="margin-top: 30px;">
+            <div class="arrow-wrap">
+              <div class="down-arrow">
+                <svg width="30" height="35">
+                  <rect width="30" height="5" fill="white"/>
+                </svg>
+              </div>
+              <div class="toggle" >
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+            Scroll for More
+          </div>
     </div>
+    <div id="board" class="fs-pic">
+        <div class="title">
+            Board of Directors &nbsp;|
+        </div>
+        
+        <div class="swiper board-scroll">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div id="ceo" class="board-member">
+                        <div class="name">
+                            <span class="bold">Greg Garfield,</span>
+                        </div>
+                        <div class="bio">
+                            <span class="cred">Senior Managing Partner at KCK Group</span><br>
+                            Mr. Garfield held a number of executive-level legal and business development positions in different Guidant 
+                            operating companies. Following Guidants acquisition by Boston Scientific, Greg joined Acclarent, Inc. where
+                             he served initially as Vice President of Corporate Development, and then as Chief Operating Officer through 
+                             the acquisition and integration of Acclarent by Ethicon, Inc., a Johnson & Johnson company. Greg currently
+                             serves as a Senior Managing Director at KCK Group
+
+                        </div>
+                    </div>
+                    <div id="president" class="board-member">
+                        <div class="name">
+                            <span class="bold">Mike Winzler,</span>
+                        </div>
+                        <div class="bio">
+                            <span class="cred">President of Winzler Investment</span><br>
+                             Mr. Winzeler is a co-founder of RODO Medical and has 25 years of manufacturing /management experience. 
+                             Since 1997, he has served as President/CEO of Winzeler Stamping Co. located in Montpelier, OH. He co-founded
+                             Enview Technologies, LLC in 2001 and currently serves as its president. 
+
+                        </div>
+                    </div>
+                    <div id="cco" class="board-member">
+                        <div class="name">
+                            <span class="bold">Ben Wu,</span>
+                        </div>
+                        <div class="bio">
+                            <span class="cred">DDS, PhD, Chief Clinical Officer and Co-Chair of RODO Clinical Advisory Board </span><br>
+                             Dr. Wu is an accomplished prosthodontist and PhD scholar. He currently serves as Chair of UCLA Division of 
+                             Advanced Prosthodontics, Chair of Biomaterials Science and Executive Director of UCLA Innovative Digital 
+                             Dentistry Systems. Dr. Wu received his Engineering PhD from MIT and Advanced Prosthodontics from Harvard 
+                             University.
+                        </div>
+                    </div>
+                    <div id="vp-of-cr" class="board-member">
+                        <div class="name">
+                            <span class="bold">Young Seo,</span>
+                        </div>
+                        <div class="bio">
+                            <span class="cred">PhD, Co-Founder and Chief Executive Officer </span><br>
+                            Dr. Seo has over 15 years of experience as an entrepreneur. 
+                            Prior to RODO Medical, he co-founded Enview Technologies in the automotive industry with his serial 
+                            co-founding partner, Mike Winzeler. Enview&apos;s technologies were sold to Daimler Chrysler and Whirlpool.
+                        </div>
+                    </div>
+                    <!-- <div id="evp" class="board-member">
+                        <div class="name">
+                            <span class="bold">Holger Haderer,</span> EVP Global Marketing & Education, Straumann Group
+                        </div>
+                        <div class="bio">
+                            <span class="cred">Global Marketing & Education</span><br>
+                            Mr. Haderer&apos;s career at Straumann spans 13 years, during which he has gained significant expertise in 
+                            strategic cross-regional marketing & sales as well as in general management. Prior to taking on his current 
+                            role, Mr. Haderer spent seven years as Head Marketing & Sales Western Europe, including an ad-interim stint 
+                            of 14 months as Country Manager of Straumann France. He joined Straumann in 2006 as Head of Marketing & 
+                            Education in Germany and became Head of Market Management Dental Labs in 2008.
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript">
+            const carousel = new Swiper('.s-carousel', {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                disabledOnInteraction: false,
+                pauseOnMouseEnter: true,
     
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-              direction: 'vertical',
-                clickable: 'true',
-                pagination: {
-                    el: '.swiper-pagination'
+                loop: true,
+                spaceBetween: 20,
+                direction: 'horizontal',
+                maxBackfaceHiddenSlides: 20,
+    
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
 
-                //Keyboard Control
-                keyboard: {
-                    enabled: true,
-                    onlyInViewport: false,
-                    pageUpDown: true,
-                },
-                
-                //Mousewheel
-                mousewheel: {
-                    sensitivity: 0.01,
-                },
-                
-                // And if we need scrollbar
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                    draggable: true,
-                    snapOnRelease: true
-                },
+                breakpoints: {
+                    1200: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5,
+                    }
+                }
+    
             });
-          </script>
+        </script>
+        <script src="swiperCus.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://getbootstrap.com/docs/3.3/assets/js/docs.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="https://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+
+       
       </body>
     </html>
 </body>

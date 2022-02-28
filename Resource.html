@@ -1,148 +1,782 @@
 <!DOCTYPE html>
 <html>
-<!--TODO:  
-        - Fix Navbar Collapsed form and before collapsing form
-        - Change to Mobile form at breakpoint
-        - Adjust Scalings
--->
+    <head>
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>Smileloc</title>
+        <link rel="icon" href="smileloc-icon.png" type="image/x-icon" />
 
-<head>
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    <title>Smileloc</title>
+        <!---Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+        <link rel="stylesheet" href="fontsheet.css" />
+
+        <!---SwiperJS CSS-->
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
+        <link
+        href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+        rel="stylesheet"
+        />
+        <!---Bootstrap Core CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <!---JQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
     
-    <!---SwiperJS CSS-->
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    <link
-    href="https://unpkg.com/video.js@7/dist/video-js.min.css"
-    rel="stylesheet"
-    />
-    <!---Bootstrap Core CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        rel="stylesheet"/>
     
-    <!---JQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!---Icons-->
+        <script src="https://kit.fontawesome.com/d45cc5d9fb.js" crossorigin="anonymous"></script>
+        
     
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-    rel="stylesheet"/>
-
-    <!---Fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
-    <link rel="stylesheet" href="fontssheet.css" />
-
-    <!---Icons-->
-    <script src="https://kit.fontawesome.com/d45cc5d9fb.js" crossorigin="anonymous"></script>
+        <!---Magnific Popup-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        
+        <!---SwiperJS-->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        
+        <!---Theme CSS-->
+        <link href="testtheme.css" rel="stylesheet"/>
     
-
-    <!---Magnific Popup-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+        </script>
+        
+    </head>
     
-    <!---SwiperJS-->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    
-    <!---Theme CSS-->
-    <link href="testtheme.css" rel="stylesheet"/>
-
-    <script type="module">
-    import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
-    </script>
-    
-</head>
-
-
-<style>
-    body {
-        overflow-y: scroll;
-    }
-    body::-webkit-scrollbar {
-    display: block; 
-    height: 100%}
-</style>
-
-<body>
-    
+<body id="resource-page">
     <nav class="navbar navbar-fixed-top navbar-expand-lg">
         <div class="container-fluid" style="height: 80px;">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" id="nav-logo" href="index.html"><img src="rodomedical-logo.png"></a>
-          </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
-            <ul class="nav navbar-nav mr-auto navbar-right">
-              <li><a href="Technology.html" class="linkTech">THE Technology</a></li>
-              <li><a href="TheTeam.html">THE Team</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="News.html">News</a></li>
-              <li><a href="#"><img src="Icon awesome-instagram.svg"></a></li>
-              <li><a href="#"><img src="Icon awesome-facebook-square.svg"></a></li>
-              <li><a href="#"><img src="Icon simple-tiktok.svg"></a></li>
-              <li><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
-            </ul>
+            </div>
             
-          </div><!-- /.navbar-collapse -->
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+            <ul class="nav navbar-nav mr-auto navbar-right">
+                <li><a href="Technology.html" class="linkTech">THE Technology</a></li>
+                <li><a href="TheTeam.html">THE Team</a></li>
+                <li><a href="Resource.html">Resources</a></li>
+                <li><a href="News.html">News</a></li>
+                <li class="icons"><a href="#"><img src="Icon awesome-instagram.svg"></a><a href="#"><img src="Icon awesome-facebook-square.svg"></a> <a href="#"><img src="Icon simple-tiktok.svg"></a></li>
+                <li id="no-collapse"><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
+            </ul>
+            </div><!-- /.navbar-collapse -->
+            <button onclick="location.href='mailto:info@rodomedical.com'" type="button" id="nc" class="contact btn btn-sm">Contact Us</button>
         </div><!-- /.container-fluid -->
-      </nav> 
+        </nav> 
+<section id="experts">
+<h1> What our experts say <span class="bar"> | </span> <span class="sub"><br class="xs-visible"> Our Smileloc system benefits oral surgery, temporarty and final restorations, and laboratory procedures.</span></h1>
+    <div class="flex-div">
+      <div class="vidPic a">
+        <a href="#curtis" class="button more" id="cj-vid"> <img class="pop-thumbnail" src="PastedGraphic-8.png"><i class="fas fa-play gif" aria-hidden="true"></i> </a>
+        <p><span>Dr. Curtis Jansen</span><br>Smileloc Procedural Video</p>
+        <div id="curtis" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
 
-<!-- Slider main container -->
-<div>
-    <img src="Resource1.png" width="100%"/>
-</div>
-<div>
-    <img src="Resource 2.png" width="100%"/>
-</div>
-<div>
-    <img src="Resource3.png" width="100%"/>
-</div>
-<div>
-    <img src="Resource4.png" width="100%"/>
-</div>
+            <iframe width="850" height="480" src="https://www.youtube.com/embed/d4HgQZeLSvk" 
+            title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+
+        </div>
+    </div>  
+    <div class="vidPic b">  
+        <a href="#leoyang" class="button more" id="ly-vid" onclick="loadVid();"><img class="pop-thumbnail" src="PastedGraphic-9.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
+        <p><span>Dr. Leo Yang</span><br>Smileloc Delivery and Removal Video</p>
+        <div id="leoyang" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+            <video playsinline controls id="ly-inter" class="pop-vid" src="RODO - Dr. Leo Yang - Interview Compressed.mp4" >
+            </video>
+        </div>
+    </div>
+    <div class="vidPic c">
+        <a href="#stevelim" class="button more" id="sl-vid" onclick="loadVid();"><img class="pop-thumbnail" src="PastedGraphic-10.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
+        <p><span>Dr. Steve Lim</span><br>Center for Advanced Dentistry Video</p>
+        <div id="stevelim" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+            <video playsinline controls id="sl-inter" class="pop-vid" src="Center For Advanced Dentistry Steve Lim.mp4" >
+            </video>
+        </div>
+    </div>
+
+    <div class="vidPic d">
+        <a href="#kowalski" class="button more" id="bjk-vid"><img class="pop-thumbnail" src="PastedGraphic-11.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
+        <p><span>BJ Kowalski, President of ROE Dental Laboratory</span><br>We're changing the HOLE Dentistry: Smileloc</p>
+        <div id="kowalski" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+            
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/6Eb7b_m6Yr8" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="vidPic e">
+        <a href="#youngseo" class="button more" id="ys-vid"><img class="pop-thumbnail" src="PastedGraphic-12.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
+        <p><span>Young Seo, CEO of RODO Medical</span><br>ROE Reviews - Smileloc by RODO</p>
+        <div id="youngseo" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+            
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/HxiHoBBVoeM" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="vidPic f">
+        <a href="#grantolsen" class="button more" id="go-vid"><img class="pop-thumbnail" src="PastedGraphic-13.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
+        <p><span>Dr. Grant Olsen</span><br>Changing the HOLE Industry with Smileloc</p>
+        <div id="grantolsen" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+            
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/GvVqwfQZL58" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+    </div>
+  </div>
+<!-- 
+    <div class="quote">
+        <span class="span-text">&ldquo;This innovative, cement-free retention system brings a 
+            totally new dimension to implant dentistry &rdquo;</span> <br><span class="quotee"> Dr. Hans-Peter Weber</span>
+    </div> -->
+  </section>
+  <!-- <section id="training">
+    <div class="title">
+      What experts say |
+    </div>
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; height: 600px; width: 1100px;" class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div style="width:350px; height: 100%;" class="info-box">
+                SOME TEXT INFO
+            </div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/EngW7tLk6R8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+        </div>
+      </div>
+      <div class="swiper-button-next"><i id="rightarrow" class="fas fa-chevron-right"></i></div>
+      <div class="swiper-button-prev"><i id="leftarrow" class="fas fa-chevron-left"></i></div>
+    </div>
+    <div style="width:1100px; height: 150px;" thumbsSlider="" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section id="publications">
+      <div class="title">
+          Publications &nbsp;| &nbsp; <span>Smileloc System has been proven for device safety and efficacy in benchtop testing and clinical trials.</span>
+      </div>
+      
+      <div class="swiper publication-scroll">
+          <div class="row-wrap">
+              <div id="jpd" class="group sole col-lg-6 col-xs-12">
+                  <div class="article">
+                    <div class="full col-lg-2 col-xs-12">
+                      <img width="100%" src="JPD.svg" />
+                     </div>
+                    <a target="_blank" href="https://www.thejpd.org/article/S0022-3913(16)30275-X/abstract">
+                      <div class="col-xs-1">  
+                        <img class="pdf-icon" src="Icon feather-external-link.svg" />
+                      </div>
+                      <div class="headline col-lg-9 col-xs-11 col-xs-11">
+                          Clinical application of a shape memory implant abutment system<br>
+                          <span class="source">                      
+                            The Journal of Prosthetic Dentistry
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article">
+                    <div class="col-lg-2 col-xs-12"></div>
+                   <a target="_blank" href="https://www.thejpd.org/article/S0022-3913(18)31164-8/abstract">
+                    <div class="col-xs-1">
+                      <img class="pdf-icon" src="Icon feather-external-link.svg" />
+                    </div>
+                      <div class="headline col-lg-9 col-xs-11">
+                        Evaluation of a Shape Memory Implant Abutment System: An up to Six-Month Pilot Clinical Study<br>
+                        <span class="source">                      
+                          The Journal of Prosthetic Dentistry
+                      </span>
+                    </div>
+                   </a>
+                  </div>
+                  <div class="article">
+                    <div class="col-lg-2 col-xs-12"></div>
+                   <a target="_blank" href="https://www.thejpd.org/article/S0022-3913(19)30417-2/abstract">
+                    <div class="col-xs-1"> 
+                      <img class="pdf-icon" src="Icon feather-external-link.svg" />
+                    </div>
+                      <div class="headline col-lg-9 col-xs-11">
+                        Treating an edentulous mandible with an implant-supported prosthesis with a shape-memory alloy abutment system<br>
+                        <span class="source">                      
+                          The Journal of Prosthetic Dentistry
+                        </span>
+                      </div>
+                   </a>
+                  </div>
+                  <div class="article">
+                    <div class="col-lg-2 col-xs-12"></div>
+                   <a target="_blank" href="https://www.thejpd.org/article/S0022-3913(19)30589-X/fulltext#secsectitle0010">
+                    <div class="col-xs-1"> 
+                      <img class="pdf-icon" src="Icon feather-external-link.svg" />
+                    </div>
+                      <div class="headline col-lg-9 col-xs-11">
+                        Evaluation of the wear and retention performance of a shape-memory alloy abutment system after 6 months of clinical use<br>
+                        <span class="source">                      
+                          The Journal of Prosthetic Dentistry
+                      </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="article">
+                    <div class="col-lg-2 col-xs-12"></div>
+                    <a target="_blank" href="https://www.thejpd.org/article/S0022-3913(19)30294-X/abstract">
+                    <div class="col-xs-1"> 
+                      <img class="pdf-icon" src="Icon feather-external-link.svg" />
+                    </div>
+                      <div class="headline col-lg-9 col-xs-11">
+                        Digital workflow for predictable immediate loading in the mandible by using a shape memory dental implant abutment system: A clinical report<br>
+                        <span class="source">                      
+                          The Journal of Prosthetic Dentistry
+                        </span>
+                      </div>
+                  </div>
+                 </a>
+                </div>  
+            <div id="float-right" class="col-lg-6 col-xs-12">
+              <div id="joi" class="group">
+                <div class="article">
+                  <div class="full col-lg-2 col-xs-12">
+                    <img  height="100%" src="JOI.svg" />
+                  </div>
+                  <a >
+                    <div class="col-xs-1">
+                      <img class="pdf-icon" src="Icon feather-external-link.svg" />
+                    </div>
+                  <div class="headline col-lg-9 col-xs-11">
+                    Shape-memory alloy abutment system for retention of single-tooth and implant bridge prostheses in the posterior maxilla<br>
+                    <span class="source">
+                      Journal of Oral Implantology
+                    </span>
+                  </div>
+                  </a>
+                </div>
+              </div>
+              <div class="group">
+                <div class="has-logo article">
+                  <div class="full col-lg-2 col-xs-12">
+                    <img class="other" width="100%" src="oral_maxillofacial_surgery.svg" />
+                  </div>
+                  <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1042369919300226">
+                  <div class="col-xs-1">
+                    <img class="pdf-icon" src="Icon feather-external-link.svg" />
+                  </div>
+                  <div class="headline col-lg-9 col-xs-11">
+                    Guided nitinol-retained (Smileloc) single-tooth dental restorations<br>
+                    <span class="source">
+                      Oral & Maxillofacial Surgery Clinics
+                    </span>
+                  </div>
+                  </a>
+                </div>
+                <div class="article">
+                  <div class="col-lg-2 col-xs-12"></div>
+                  <a target="_blank" href="https://www.oralmaxsurgery.theclinics.com/article/S1042-3699(19)30021-4/abstract">
+                    <div class="col-xs-1">
+                      <img class="pdf-icon" src="Icon feather-external-link.svg" />
+                    </div>
+                    <div class="headline col-lg-9 col-xs-11">
+                      Shape-memory retained complete arch guided implant treatment using nitinol (Smileloc) abutments <br>
+                      <span class="source">
+                        Oral & Maxillofacial Surgery Clinics
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="group">
+                <div class="has-logo article">
+                  <div class="full col-lg-2 col-xs-12">
+                    <img id="dbpia" class="other" width="100%" src="DBpia.svg" />
+                  </div>
+                 <a target="_blank" href="http://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE06667830">
+                  <div class="col-xs-1">
+                    <img class="pdf-icon" src="Icon feather-external-link.svg" />
+                  </div>
+                  <div class="headline col-lg-9 col-xs-11">
+                    Induction Heating Device for Dental Implant Removal <br>
+                    <span class="source">
+                      Trans. Korean Soc. Mech. Eng. B (Language: Korean)
+                    </span>
+                  </div>
+                 </a>
+                </div>
+              </div>
+            </div>  
+            <div class="col-lg-6 col-xs-12">
+              <div class="group">
+                <div class="has-logo article">
+                  <div class="full col-lg-2 col-xs-12">
+                    <img class="other" id="smileloc" width="50%" src="rodomedical-logo-sm.png" />
+                    <img class="other" id="toggle" width="50%" src="rodomedical-logo.png" />
+                  </div>
+                  <a target="_blank" href="Accuracy and tolerance of RODO abutment critical dimensions.pdf">
+                    <div class="col-xs-1">
+                      <img class="pdf-icon" src="pdf.svg" />
+                    </div>
+                  <div class="headline col-lg-9 col-xs-11">
+                    Determination of accuracy and tolerance of critical dimensions in RODO abutments<br>
+                    <span class="source">
+                      RODO Medical
+                    </span>
+                  </div>
+                </a>
+                </div>
+              </div>
+              <div class="group">
+                <div class="article">
+                  <div class="col-lg-2 col-xs-12" style="height:30px;">
+                    <img src="" />
+                  </div>
+                  <a target="_blank" href="Assessment of Nickel Ion Release from Smileloc Sleeves.pdf">
+                    <div class="col-xs-1">
+                      <img class="pdf-icon" src="pdf.svg" />
+                    </div>
+                    <div class="headline col-lg-9 col-xs-11">
+                      Assessment of Nickel Ion Release from Smileloc Sleeves<br>
+                      <span class="source">
+                        RODO Medical
+                      </span>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xs-12">
+              <div class="group">
+                <div class="article">
+                  <div class="col-lg-2 col-xs-12">
+                    <img class="other toggle" width="50%" src="rodomedical-logo-sm.png" />
+                  </div>
+                  <a target="_blank" href="Corrosion Resistance of Smileloc Exposed to the Oral Environment.pdf">
+                    <div class="col-xs-1">
+                      <img class="pdf-icon" src="pdf.svg" />
+                    </div>
+                    <div class="headline col-lg-9 col-xs-11">
+                      Corrosion Resistance of Smileloc Exposed to the Oral Environment<br>
+                      <span class="source">
+                        RODO Medical
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="group">
+                <div class="article">
+                  <a target="_blank" href="Intra-Oral Temperatures During Unlocking of Smileloc.pdf">
+                    <div class="col-lg-2 col-xs-12" style="height:0px;"></div>
+                    <div class="col-xs-1">
+                      <img class="pdf-icon" src="pdf.svg" />
+                    </div>
+                    <div class="headline col-lg-9 col-xs-11">
+                      Intra-Oral Temperatures During Unlocking of Smileloc-Retained Restoration Using Smilekey<br>
+                      <span class="source">
+                        RODO Medical
+                      </span>
+                    </div>
+                    </a>
+                </div>
+              </div>
+            </div>  
+          </div>
+      </div>
+      <div class="bottom-notif">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="tab-caption">Scroll to View More</div>
+  </section>
+  <section id="FAQ">
+      <div class="title">
+        Frequently Asked Questions (FAQ)
+      </div>
+      <div id="FAQ-scroll">
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> How does RODO restorative solution, Smileloc, differentiate itself from other conventional treatments; Screw-Retained or 
+            Cement Retained dental prosthesis?
+          </div>
+          <div class="answer">
+            <span>A:</span> Smileloc replaces the need for screw-retained or cement-retained dental prosthesis thus removing the complications 
+            associated with conventional treatment methods. Smileloc delivery is easy, quick and predictable. Additionally, the Smileloc 
+            can easily be retrieved with Smilekey.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> What is Smileloc?
+          </div>
+          <div class="answer">
+            <span>A:</span> Smileloc is made of nickel titanium aka Nitinol (special metal alloy used in medical industry for more than 40 years) and 
+            acts a mechanical lock between abutment and prosthesis. Nitinol has unique shape-memory and super elastic properties.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            How does Smileloc work?
+          </div>
+          <div class="answer">
+            <span>A:</span> Smileloc has 8 arms - 4 inner arms that engage an abutment undercut and 4 outer arms that engage a coping undercut that the 
+            restoration is affixed to.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> Is Nitinol safe? What if my patient has nickel allergies
+          </div>
+          <div class="answer">
+            <span>A:</span> Nitinol is used in various medical applications such as endodontic files and heart stents. Smileloc has been 
+            thoroughly studied and approved by FDA to ensure patient safety and product efficiency. One study performed by RODO showed 
+            that a bare Smileloc leached less nickel than ingested as part of our daily diet.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q: </span> Is Smileloc Single-Use?
+          </div>
+          <div class="answer">
+            <span>A:</span> Per FDA requirements, Smileloc is labeled as a single-use component. As are with other restorative components 
+            such as prosthetic screws and healing abutments.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> How is the Smileloc dental prosthesis removed?
+          </div>
+          <div class="answer">
+            <span>A:</span> Dental prosthesis can easily be removed with Smilekey, an induction device that emits energy to cause the 8 
+            arms to taper and changes the Smileloc from a locked to an unlocked position enabling easy removal of the dental prosthesis. 
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> How long does it take to “unlock” Smileloc with Smilekey?
+          </div>
+          <div class="answer">
+            <span>A:</span> Smilekey is preset to 8-seconds, for instance an all-on-four prothesis can be fully removed in less than a minute.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> How long do I have to remove an arch before the Smileloc&apos;s arms re-engage?
+          </div>
+          <div class="answer">
+            <span>A: </span> Once the Smileloc is in the unlocked position, it will remain in that configuration. Only if the arms are 
+            manually re-set would it return to a locked configuration.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> At what temperature does the Smileloc unlock?
+          </div>
+          <div class="answer">
+            <span>A:</span> 55°C (135°F)
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> Will Smileloc unlock if my patient consumes very hot liquid or food?
+          </div>
+          <div class="answer">
+            <span>A:</span> No, direct heat needs to be applied to unlock Smileloc. In addition, Smileloc is insulated by the restorative 
+            dental material (crown/prosthesis) and coping.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            Will Smilekey interfere with or cause damage to adjacent metal dental prostheses during activation? What about the implant, 
+            will the heat damage to dental implant?
+          </div>
+          <div class="answer">
+            <span>A:</span> No, Smilekey activation is directed through the center of the tip and its magnetic fields dissipate into air 
+            exponentially. The heat that is generated in Smileloc during activation for 8 seconds quickly dissipates and will not cause 
+            damage to the implant.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> What implant systems is Smileloc compatible with?
+          </div>
+          <div class="answer img-wrap">
+            <span>A:</span> <img src="neodent.svg" /><img src="Biohorizon.svg" /> <img src="straumann.svg" /> <img src="zimmerbot.svg" />
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q: </span> What gingival heights and angles are available for RODO Abutments?
+          </div>
+          <div class="answer">
+            <span>A:</span> RODO abutments are available in industry standard gingival heights and 17° and 30° for multi-unit application.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> What torque value are RODO Abutments tightened to?
+          </div>
+          <div class="answer">
+            <span>A:</span> RODO abutments are tightened to the implant manufacturers&apos; recommendations. The torque values are noted 
+            on each product pouch. Note all RODO ancillary components should be hand tightened.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> Does RODO offer custom abutments?
+          </div>
+          <div class="answer">
+            <span>A:</span> Custom abutment is not necessary with the RODO abutment system. Instead, you customize the tooth that will 
+            connect to a stock abutment with the Smileloc. Since there is no residual cement clean-up required, a crown can be longer and
+             placed more subgingival and the emergence profile is not affected as it appears the tooth emerges from the gingiva for an 
+             esthetic result.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> What type of restorative material can be used with the RODO Abutment System?
+          </div>
+          <div class="answer">
+            <span>A: </span> RODO is agnostic to restorative material. Smileloc retained dental prostheses have been restored with Emax, 
+            Zirconia, PEKKTON and TriLor to name a few.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> Is the RODO Abutment System compatible with Dental Software Applications?
+          </div>
+          <div class="answer">
+            <span>A: </span> Yes, the RODO Abutment System library is available for 3Shape and EXOCAD.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> What if my patient moves and the treating dentist is not knowledgeable about the RODO Abutment System?
+          </div>
+          <div class="answer">
+            <span>A: </span> RODO will loan any instruments and/or Smilekey required to the treating dentist. Additionally, RODO will 
+            provide training and support to the treating dentist.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> What is the longevity of the system?
+          </div>
+          <div class="answer">
+            <span>A: </span> RODO products come with a lifetime warranty on all components, except Smilekey. We completed FDA required 
+            bench top testing exerting load and fatigue of more than 5 million cycles without failure in our products. We have cases more 
+            than 7 years old which exhibit no degradation of our products.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> How long has the product been on the market?
+          </div>
+          <div class="answer">
+            <span>A: </span> First usage of Smileloc was in 2013 as part of FDA clinical trial to obtain regulatory approval. FDA approved
+             Smileloc in late-2016 and Smilekey was approved in mid-2018.
+          </div>
+        </div>
+        <div class="QA">
+          <div class="background-text">Q&A</div>
+          <div class="question">
+            <span>Q:</span> Will implant warranty be voided by implant manufacturer when used with RODO Abutment?
+          </div>
+          <div class="answer">
+            <span>A: </span> If the implant company refuses to honor their warranty for the implant &#40;exclusively due to the use of the 
+            Products&#41;, and the Clinician both meets the “Eligibility" criteria, then RODO will reimburse the Clinician for the actual 
+            and verifiable purchase cost of a replacement implant. Reference RODO Warranty Terms and Conditions for full coverage details
+            at <a href="http://rodomedical.com/terms-and-conditions/.">http://rodomedical.com/terms-and-conditions/</a>.
+          </div>
+        </div>
+      </div>
+      <div class="scroll-arrow">
+        <div class="arrow-wrap">
+          <div class="down-arrow">
+            <svg width="30" height="35">
+              <rect width="30" height="5" fill="white"/>
+            </svg>
+          </div>
+          <div class="toggle" >
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        Scroll for More
+      </div>
+  </section>
 
 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".swiper", {
-              direction: 'vertical',
-                clickable: 'true',
-                pagination: {
-                    el: '.swiper-pagination'
-                },
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript">
+        $('#sd-vid').magnificPopup({
+        type: 'inline',
+        midclick: true
+    });
+    $('#sr-vid').magnificPopup({
+        type: 'inline',
+        midclick: true
+    });
+    $('#fd-vid').magnificPopup({
+        type: 'inline',
+        midclick: true,
+    });
+    $('#cj-vid').magnificPopup({
+        type: 'inline',
+        midclick: true,
+    });
+    $('#ly-vid').magnificPopup({
+        type: 'inline',
+        midclick: true,
+    });
+    $('#sl-vid').magnificPopup({
+        type: 'inline',
+        midclick: true,
+    });
+    $('#bjk-vid').magnificPopup({
+        type: 'inline',
+        midclick: true,
+    });
+    $('#ys-vid').magnificPopup({
+        type: 'inline',
+        midclick: true,
+    });
+    $('#go-vid').magnificPopup({
+        type: 'inline',
+        midclick: true,
+    });
+    
+    </script>
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          },
+          thumbs: {
+            swiper: swiper
+          }
+        });
+      </script>
 
-                //Keyboard Control
-                keyboard: {
-                    enabled: true,
-                    onlyInViewport: false,
-                    pageUpDown: true,
-                },
-                
-                //Mousewheel
-                mousewheel: {
-                    sensitivity: 0.01,
-                },
-                
-                // And if we need scrollbar
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                    draggable: true,
-                    snapOnRelease: true
-                },
-            });
-  </script>
-  </body>
+    <script src="swiperCus.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/docs/3.3/assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+
+</body>
+        
 </html>
