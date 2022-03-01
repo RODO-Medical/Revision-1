@@ -9,26 +9,26 @@
 
 @font-face {
     font-family: 'AvenirBold';
-    src: url('Avenir LT Std 85 Heavy.otf');
+    src: url('fonts/Avenir LT Std 85 Heavy/Avenir LT Std 85 Heavy.otf');
 }
 
 @font-face {
     font-family: 'AvenirBolder';
-    src: url('Avenir LT Std 95 Black.otf');
+    src: url('fonts/Avenir LT Std 95 Black/Avenir LT Std 95 Black.otf');
 }
 
 @font-face {
     font-family: 'AvenirMedium';
-    src: url('Avenir LT Std 65 Medium.otf');
+    src: url('fonts/Avenir LT Std 65 Medium/Avenir LT Std 65 Medium.otf');
 }
 
 @font-face {
     font-family: 'AvenirRoman';
-    src: url('Avenir LT Std 55 Roman.otf');
+    src: url('fonts/Avenir LT Std 55 Roman/Avenir LT Std 55 Roman.otf');
 }
 @font-face {
     font-family: 'AvenirBook';
-    src: url('Avenir LT Std 45 Book.otf');
+    src: url('fonts/Avenir LT Std 45 Book/Avenir LT Std 45 Book.otf');
 }
 
 
@@ -917,6 +917,7 @@ svg g text {
         }   
     #page9 button.contact {
         position: absolute;
+        font-family: 'AvenirBold', sans-serif;
         top: 71.83%;
         width: 18vh;
         left: 44.8%;
@@ -1164,8 +1165,10 @@ overflow-y: hidden;
 
 #tech-page {
     width: 100vw;
+    height: 100vh;
     text-align: center;}
     #tech-page::-webkit-scrollbar {
+        width: 5px;
         display: block;
         background-color: white;}
         #tech-page::-webkit-scrollbar-thumb {
@@ -1174,6 +1177,62 @@ overflow-y: hidden;
                 background: rgb(224, 224, 224);}
                 #tech-page::-webkit-scrollbar-button {
                     display:none;}
+
+#smileloc-tree {
+    position: relative;
+    top: 80px;
+    background-color: white;
+    height: auto;
+    text-align: left;
+    padding-bottom: 170px;}
+    #smileloc-tree .title {
+        background-color: white;
+        position: relative;
+        width: 75%;
+        padding-top: 96px;
+        margin: 0 auto 100px;
+        font-family: 'Rotunda', sans-serif;}
+        #smileloc-tree .title .top-text{
+            font-size: 42px;
+            font-weight: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 15px;}
+        #smileloc-tree .title .bottom-text {
+            font-size: 18px;
+            font-family: 'AvenirMedium', sans-serif;
+        }
+            #smileloc-tree .bottom-text a{
+                color: black;
+                text-decoration: underline;
+            }
+    #smileloc-tree .row {
+        width: 85%;
+        margin: auto;}
+        #smileloc-tree .info {
+            margin-left: 136px;
+            text-align: center;
+            transform: translateY(-50px);}
+            #smileloc-tree .info h3 {
+                font-family: 'AvenirBolder', sans-serif;
+                text-align: left;
+                font-size: 22px;
+                margin-bottom: 20px;}
+            #smileloc-tree .info p {
+                text-align: left;
+                font-family: 'AvenirMedium';
+                font-size: 18px;
+                margin-bottom: 50px;}
+        @media (max-width: 1199px) {
+            #smileloc-tree .info {
+                margin: 80px 0 0 0;
+            }
+            #smileloc-tree .title {
+                margin-bottom: 25px;
+            }
+        }
+
+
                     
 #page-1 {
     position: relative;
@@ -1357,6 +1416,7 @@ overflow-y: hidden;
     background-color: #051B27;
     width: 100vw;}
     #team::-webkit-scrollbar {
+        width: 5px;
         display: block;
         background-color: white;}
         #team::-webkit-scrollbar-thumb {
@@ -1397,7 +1457,7 @@ overflow-y: hidden;
         .row-wrap .img-wrap {
             position: relative;
             height: 100%;}
-             .img-wrap img {
+             #CAB .img-wrap img {
                 width: 100%;
                 height: auto;}
                 #CAB-page .row-wrap .pikos {
@@ -1458,7 +1518,7 @@ overflow-y: hidden;
         #CAB-page .row-wrap {
             height: 400px;
         }
-        .img-wrap img {
+        #CAB-page .img-wrap img {
             width: auto;
             height: 100%;}
         .row-wrap svg {
@@ -1535,7 +1595,17 @@ overflow-y: hidden;
         height: 65%;
         width: 75%;}
         #management .manage-scroll::-webkit-scrollbar {
-            display: none;}
+                    width: 5px;
+                    display: block;
+                    background-color: #080808}
+                    #management .manage-scroll::-webkit-scrollbar-thumb {
+                        border-radius: 25px;
+                        background: #fff;}
+                        #management .manage-scroll::-webkit-scrollbar-track {
+                            border-radius: 25px;
+                            background: rgba(255, 255, 255, 0.103);}
+                            #management .manage-scroll::-webkit-scrollbar-button {
+                                display:none;}
         #management .swiper-slide {
             background-color: inherit;}
     #management .title {
@@ -1694,6 +1764,7 @@ overflow-y: hidden;
 /***************** Resources Page CSS********************************************************/
 
 #resource-page::-webkit-scrollbar {
+    width: 5px;
     display: block;
     background-color: white;}
     #resource-page::-webkit-scrollbar-thumb {
@@ -1931,6 +2002,18 @@ margin-top: 200px;
         background-color: white;
         text-align: left;
         font-size: 16px;}
+        #publications .row-wrap::-webkit-scrollbar {
+            width: 5px;
+            display: block;
+            background-color: white;}
+            #publications .row-wrap::-webkit-scrollbar-thumb {
+                border-radius: 25px;
+                background: #080808;}
+                #publications .row-wrap::-webkit-scrollbar-track {
+                    border-radius: 25px;
+                    background: rgba(8, 8, 8, 0.25); }
+                    #publications .row-wrap::-webkit-scrollbar-button {
+                        display:none;}
         #publications .row-wrap {
             overflow-y: scroll;
             height: 560px;
@@ -2054,8 +2137,19 @@ margin-top: 200px;
         width: 75.2vw;
         margin: 0 auto 25px;
         overflow-y: auto;
-        overflow-x: hidden;
-    }
+        overflow-x: hidden;}
+        #FAQ #FAQ-scroll::-webkit-scrollbar {
+            width: 5px;
+            display: block;
+            background-color: #051B27;}
+            #FAQ #FAQ-scroll::-webkit-scrollbar-thumb {
+                border-radius: 25px;
+                background: #fff;}
+                #FAQ #FAQ-scroll::-webkit-scrollbar-track {
+                    border-radius: 25px;
+                    background: rgba(255, 255, 255, 0.25);}
+                    #FAQ #FAQ-scroll::-webkit-scrollbar-button {
+                        display:none;}
     #FAQ .QA {
         position: relative;
         margin-bottom: 60px;}
