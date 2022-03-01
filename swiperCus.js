@@ -178,9 +178,9 @@ const swiper = new Swiper('.swiper-main', {
     slidesPerView: 1,
     direction: 'vertical',
     loop: false,
-     
+    noSwiping: false,
     speed: 1000,
-    shortSwipes: false,
+    shortSwipes: true,
 
     forceToAxis: true,
     preventClicks: true,
@@ -218,10 +218,6 @@ const swiper = new Swiper('.swiper-main', {
     
     breakpoints: {
 
-      480: {
-        noSwiping: false,
-      },
-  
       992: {
         noSwiping: true,
       },
