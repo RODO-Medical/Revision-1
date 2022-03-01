@@ -41,7 +41,7 @@ var el;
      bg.pause();
   }
   function playVid() {
-      bg.load();
+      bg.currentTime= 0;
       bg.play();
   }
   
@@ -49,7 +49,7 @@ var el;
     bg2.pause();
  }
  function playVid2() {
-     bg2.load();
+     bg2.currentTime= 0;
      bg2.play();
  }
 
@@ -57,7 +57,7 @@ var el;
   bg3.pause();
 }
 function playVid3() {
-   bg3.load();
+   bg3.currentTime= 0;
    bg3.play();
 }
   function loadVid() {
@@ -223,7 +223,7 @@ const swiper = new Swiper('.swiper-main', {
       },
   
       992: {
-        noSwiping: false,
+        noSwiping: true,
       },
   
       1024: {
@@ -264,6 +264,7 @@ $('#nav-logo').click(swiper,function(){
 })
 
 
+/* 
 function keepCentered() {
   var w = document.querySelector("#bgvideo2").clientWidth;
   var windowWidth = window.innerWidth;
@@ -273,7 +274,7 @@ function keepCentered() {
       obj.style.transform = "";
     }
 }
-window.addEventListener('resize', keepCentered);
+window.addEventListener('resize', keepCentered); */
 
 /* 
 function fontScale() {
