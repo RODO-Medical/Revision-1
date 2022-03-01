@@ -5,6 +5,27 @@
 //      - Possibly because of incorrect Swiper Size
 //      - Video doesn't resize smoothly. Possibly because of wrong comparison
 
+var mfp_container;
+
+
+
+document.addEventListener('click', function() {
+    mfp_container = document.querySelector(".pop-vid"); 
+    mfp_all = document.querySelectorAll(".pop-vid");
+  document.addEventListener('click', function(event) {
+    var isClickInsideElement = mfp_container.contains(event.target);
+    if (!isClickInsideElement) {
+      for(i = 0; i < mfp_all.length; i++) {
+        mfp_all[i].load();
+      }
+      mfp_container.pause();
+      console.log("Outside");
+    } else {
+      console.log("inside");
+    }
+  });
+
+});
 
 var hidden = document.getElementById("promo-video");
 var el;
@@ -20,6 +41,7 @@ var el;
      bg.pause();
   }
   function playVid() {
+      bg.load();
       bg.play();
   }
   
@@ -27,6 +49,7 @@ var el;
     bg2.pause();
  }
  function playVid2() {
+     bg2.load();
      bg2.play();
  }
 
@@ -34,6 +57,7 @@ var el;
   bg3.pause();
 }
 function playVid3() {
+   bg3.load();
    bg3.play();
 }
   function loadVid() {
@@ -91,30 +115,6 @@ var page_6 = document.querySelector('#page6');
 var page_7 = document.querySelector('#page7');
 var page_8 = document.querySelector('#page8');
 var page_9 = document.querySelector('#page9');
-
-var mfp_container;
-
-
-
-
-document.addEventListener('click', function() {
-    mfp_container = document.querySelector(".pop-vid"); 
-    mfp_all = document.querySelectorAll(".pop-vid");
-  document.addEventListener('click', function(event) {
-    var isClickInsideElement = mfp_container.contains(event.target);
-    if (!isClickInsideElement) {
-      for(i = 0; i < mfp_all.length; i++) {
-        mfp_all[i].load();
-      }
-      mfp_container.pause();
-      console.log("Outside");
-    } else {
-      console.log("inside");
-    }
-  });
-
-});
-
 
 window.addEventListener('load', function () {
 document.addEventListener('click', function() {
@@ -223,7 +223,7 @@ const swiper = new Swiper('.swiper-main', {
       },
   
       992: {
-        noSwiping: true,
+        noSwiping: false,
       },
   
       1024: {
@@ -261,9 +261,6 @@ const carousel = new Swiper('.s-carousel', {
 
 $('#nav-logo').click(swiper,function(){
     swiper.slideTo(0);
-})
-$('.linkTech').click(swiper, function() {
-    swiper.slideTo(5);
 })
 
 
