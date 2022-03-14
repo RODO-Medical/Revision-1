@@ -245,6 +245,9 @@ svg g text {
             width: 100vw;
             height: calc(100vh - 80px);    
         }
+	.swiper-slide {
+            transform:translateY(80px);
+        }
     }}/*
     @media (max-width:414px) {
         @media(max-height:896px) {
