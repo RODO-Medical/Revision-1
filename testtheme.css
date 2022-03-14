@@ -1270,6 +1270,7 @@ button.mfp-close {
     outline: 0;
     padding: 0;
     z-index: 1046;
+    right: 5%;
     box-shadow: none;}
     .mfp-close {
         width: 44px;
@@ -1307,9 +1308,9 @@ button.mfp-close {
             display: block;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
-            background: url("rodomedical-logo-sm.png") no-repeat;
+            background: url("images/rodomedical-logo-sm.png") no-repeat;
             width: 40px;
-            height: 40px;
+            height: 51px;
             padding-left: 180px;}
     }
 .navbar-header {
@@ -1736,6 +1737,13 @@ overflow-y: hidden;
             }
     #page-1 .pop-thumbnail {
         width: 93.6%;}
+@media (max-width: 768px) {
+    #page-1 .column {
+        margin-bottom: 40px;
+    }
+}
+
+
 #page-2 {
     width: 100vw;
     height: auto;
@@ -1829,8 +1837,33 @@ overflow-y: hidden;
 @media (max-width: 992px) {
     #page-2 .gif {            
         top: 20%;
-        left: 45%;
-        transform: translate(60px, 0);
+        left: 50%;
+        font-size: 32px;
+    }
+    #page-2 .row-wrap {
+        width: 100%;
+    }
+    #fd-vid .pop-thumbnail {
+        transform: translate(0);
+    }
+    #page-2 .title .subtext {
+        font-size: 14px;
+        text-align: left;
+    }
+    #page-2 #lump {
+        transform: translateX(-6%);}
+    #page-2 .wrapper{
+        padding-left: 0;
+        transform: translateX(8%);}
+        #page-2 .loc {
+            font-size: 13px;
+        }
+    #page-2 .vid-div {
+        width: 100%;
+    }
+    #page-2 .col-xs-12, #page-2 #techPic, #page-2 #column-2, .vid-div h3{
+        text-align: center;
+        transform: translate(0);
     }
 }
 @media (max-width: 1280px){
@@ -2038,6 +2071,21 @@ overflow-y: hidden;
         #rightarrow, #leftarrow {
             font-size: 18px;
         }
+        #CAB-page .row-wrap .bio.wu {
+            padding: 10px 15px 0 0px;
+        }
+        #CAB-page .s-carousel .who .names {
+            font-size: 2.5vw;
+        }
+        #CAB-page .s-carousel {
+            height: 45vw;
+        }
+        #CAB-page .s-carousel .who .positions {
+            font-size: 2vw;
+        }
+        #CAB-page .s-carousel .who {
+            line-height: 2.5vw;
+        }
     }
 
 #management {
@@ -2133,6 +2181,12 @@ overflow-y: hidden;
     }
     #management-member .name {
         letter-spacing: 0px;
+    }
+}
+@media (max-width: 768px) {
+    #management-member .bio {
+        padding-right: 0;
+        text-align: justify;
     }
 }
 
@@ -2249,6 +2303,19 @@ overflow-y: hidden;
             font-size: 28px;
         }
 }
+@media (max-width: 768px) {
+    #board-member .bio {
+        padding-right: 0;
+        text-align: justify;
+    }
+    #management .title, #board .title {
+        font-size: 25px;}
+        #management .title .bar, #board .title .bar {
+            margin: 0;
+            font-size: 36px;
+        }
+}
+
 
 
 /***************** Resources Page CSS********************************************************/
@@ -2339,6 +2406,9 @@ overflow-y: hidden;
         #experts .vidPic {
             flex-basis: 500px;
         }
+        #experts h1 .sub {
+            vertical-align: middle;
+        }
     }
     @media (max-width: 1141px) {
         #experts .vidPic {
@@ -2368,7 +2438,7 @@ overflow-y: hidden;
         font-size: 30px;}
         #experts h1 .sub {
             width: 100%;
-            font-size: 13px;}
+            font-size: 14px;}
         #experts h1 .bar {
             margin: 0 35px;}
     #experts .vidPic p {
@@ -2376,6 +2446,15 @@ overflow-y: hidden;
     #experts .vidPic p span {
         font-size: 11.36px;
     }    
+}
+@media (max-width: 441px) {
+    #experts h1 {
+        font-size: 25px;
+    }
+    #experts h1 .bar {
+        margin: 0 0px;
+        font-size: 36px;
+    }
 }
 
 
@@ -2513,6 +2592,9 @@ margin-top: 200px;
         font-weight: normal;
         display: inline-block;
         width: 60%;}
+    #publications .title>span.bar {
+        width: auto;
+    }
     #publications .col-lg-2, #publications .col-xs-1 {
         text-align: center;
         padding: 0;}
@@ -2629,6 +2711,27 @@ margin-top: 200px;
                             margin: auto;
                         }
                 }
+            @media (max-width: 1145px) {
+                #publications .title>span {
+                    width: 100%;
+                }
+                #publications .article .headline {
+                    padding-right: 0;
+                }
+            }
+            @media (max-width: 450px) {
+                #publications .title {
+                    font-size: 34px;}
+                #publications .title>span.bar {
+                    margin: 0 0 0 -5px;
+                    width: auto;
+                    font-size: 33px;
+                    transform: translateY(-5px);
+                }
+                #publications .title>span {
+                    font-size: 16px;
+                }
+            }
         #publications .headline {
             display: block;
             font-family: 'RotundaMedium', sans-serif;}
@@ -2767,6 +2870,7 @@ margin-top: 200px;
     position: relative;
     color: white;
     top: 80px;
+    padding-bottom: 80px;
     height: auto;
     text-align: left;
     background-color: #051B27;}
@@ -2850,7 +2954,11 @@ margin-top: 200px;
             text-align: center;
             transform:translateY(0);
             height: 150px;}
+            #press-releases .logo {
+                text-align: left;
+            }
             #press-releases .logo img {
+                left: 0;
                 width: 150px;}
                 #press-releases #rdp img {
                     width: auto;
