@@ -348,7 +348,7 @@ svg g text {
 @media (max-width:1024px) {
         @media(max-aspect-ratio: 2/1) {
         .swiper-slide {
-            transform: translateY(-80px);
+            transform: translateY(-6%);
         }
         }}
 .gif {
