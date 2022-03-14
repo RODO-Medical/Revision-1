@@ -345,7 +345,12 @@ svg g text {
     -webkit-backface-visibility: hidden;
     transform: translateZ(0);
     }
-
+@media (max-width:1024px) {
+        @media(max-aspect-ratio: 2/1) {
+        .swiper-slide {
+            transform: translateY(-80px);
+        }
+        }}
 .gif {
     position: absolute;
     top: 40%;
