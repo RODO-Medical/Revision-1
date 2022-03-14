@@ -403,7 +403,7 @@ svg g text {
 @media (max-width: 768px) AND (max-aspect-ratio: 1.5) AND (min-aspect-ratio: 0.65) {
     .swiper-main {
         width: 100vw;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 180px);
     }
 
 }
