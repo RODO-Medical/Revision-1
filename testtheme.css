@@ -560,7 +560,7 @@ svg g text {
             display:none;}
             .mute:hover #hid{
                 display: inline;}
-    #mobile-head {
+    .mobile-head {
         display: none;
     }                
 .smaller {
@@ -585,7 +585,7 @@ svg g text {
         margin-left: 4.4vw;
         top: calc(79vh - 80px);
     }
-    #mobile-head {
+    .mobile-head {
         display: block;
         position: absolute;
         top: 45px;
