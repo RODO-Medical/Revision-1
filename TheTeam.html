@@ -435,8 +435,8 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script type="text/javascript">
             const carousel = new Swiper('.s-carousel', {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
+                slidesPerView: 2,
+                slidesPerGroup: 2,
                 disabledOnInteraction: false,
                 pauseOnMouseEnter: true,
     
@@ -454,7 +454,11 @@
                     1200: {
                         slidesPerView: 5,
                         slidesPerGroup: 5,
-                    }
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3,
+                    }                        
                 }
     
             });
