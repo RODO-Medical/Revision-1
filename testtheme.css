@@ -1689,6 +1689,11 @@ overflow-y: hidden;
     #smileloc-tree .title .bottom-text {
         width: 100%;
     }
+	#smileloc-tree .title .bottom-text .bar{
+		margin: 0;}
+    #smileloc-tree .top-text {
+        font-size: 40px;
+    }
 }
                     
 #page-1 {
@@ -2474,12 +2479,12 @@ overflow-y: hidden;
 @media (max-width:947px) { 
     #experts h1 {
         width: 77.2vw;
-        font-size: 30px;}
+        font-size: 37px;}
         #experts h1 .sub {
             width: 100%;
             font-size: 14px;}
         #experts h1 .bar {
-            margin: 0 35px;}
+            margin: 0 0px;}
     #experts .vidPic p {
         font-size: 11.36px;}
     #experts .vidPic p span {
@@ -2488,7 +2493,7 @@ overflow-y: hidden;
 }
 @media (max-width: 441px) {
     #experts h1 {
-        font-size: 25px;
+        font-size: 40px;
     }
     #experts h1 .bar {
         margin: 0 0px;
