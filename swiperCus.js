@@ -26,6 +26,7 @@ var el;
 
 
   var bg = document.getElementById("bgvideo");
+  var bg11 = document.getElementById("bgvideo11");
   var bg2 = document.getElementById("bgvideo2");
   var bg3 = document.getElementById("bgvideo3");
   var bg22 = document.getElementById("bgvideo22");
@@ -33,10 +34,13 @@ var el;
   /*IF mfp-close is pressed, pause video*/
   function pauseVid() {
      bg.pause();
+     bg11.pause();
   }
   function playVid() {
       bg.currentTime= 0;
       bg.play();
+      bg11.currentTime= 0;
+      bg11.play();
   }
   
   function pauseVid2() {
