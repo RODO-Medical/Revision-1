@@ -1712,10 +1712,14 @@ overflow-y: hidden;
         font-size: 40px;
     }
 }
+
 @media (max-width: 499px) {
     #smileloc-tree .title .bar {
         display: none;
     }
+    #bioh {
+	    transform: translateY(75%);
+	}
 }
 
 #page-1 {
