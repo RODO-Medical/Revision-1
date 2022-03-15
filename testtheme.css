@@ -508,7 +508,7 @@ svg g text {
     #page2 .title {
         width: 100vw;
         letter-spacing: 0;
-        top: 18.3vh;
+        top: 10.3vh;
     }
     #page2 .title .large {
         font-size: min(6vw, 40px);
@@ -522,7 +522,7 @@ svg g text {
     }
     #page2 .linkTech {
         font-size: 16px;
-        top: calc(86vh - 80px);
+        top: calc(84vh - 80px);
     }
     #page2 .under img {
         width: 73%;
@@ -596,6 +596,7 @@ svg g text {
         line-height: 5.7vh;
         font-size: 2.5vw;
         margin-left: 4.4vw;
+        top: calc(80vh - 80px);
     }
     #mobile-head {
         display: block;
@@ -604,11 +605,31 @@ svg g text {
         left: 20px;
         font-size: max(18px, 4vw);
     }
+    .credit-video {
+        top: calc(86vh - 80px);
+    }
+
+
+
+
+   /*  #bgvideo2, #bgvideo3 {
+        filter: blur(10px);}
+        #bgvideo3 {
+            transform: translateX(-50%);
+        }
+    #bgvideo22, #bgvideo33 {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    } */
 }
 
 
 #page4 {
-    background-image: url('topography.svg');
+    background-image: url('images/topography.svg');
     background-repeat: no-repeat;
     background-color:  #051B27;
 }
@@ -687,7 +708,7 @@ svg g text {
         width: 79vw;
         height: 3.52vh;
         left: 0;
-        top: 11.48vh;
+        top: 8.48vh;
         margin: auto;}
     #page4 #million {
         display: none;}
@@ -702,7 +723,7 @@ svg g text {
             font-family: 'AvenirBolder', sans-serif;
             width: 78vw;
             left: 10.9375vw;
-            top: 23.185vh;
+            top: 20.185vh;
             margin: -3.125vh auto;
             line-height: 1;
             font-size: 55px}
@@ -710,7 +731,7 @@ svg g text {
                 font-size: 25.25vh;
             }
     #page4 p {
-        top: 53vh;
+        top: 50vh;
         left: 13.9375vw;
         width: 76vw;
         height: 12.5vh;
@@ -720,6 +741,7 @@ svg g text {
         font-size: 6.5vw;
         }
 }
+
 
 
 
