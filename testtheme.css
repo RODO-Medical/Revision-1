@@ -1666,10 +1666,16 @@ overflow-y: hidden;
         margin-top: 50px;
     }
     #smileloc-tree .info {
-        transform: translateX(20%);
+        transform: translateX(0%);
     }
     #smileloc-tree .info p {
         font-size: 16px;
+    }
+    #smileloc-tree #lyscan {
+        width: 100%;
+    }
+    #smileloc-tree .sub-row {
+        width: 100%;
     }
 }
 @media (max-width: 899px) {
@@ -1679,6 +1685,9 @@ overflow-y: hidden;
     #smileloc-tree .col-lg-36, #smileloc-tree .col-lg-64 {
         width: 100%;
         padding-left: 0;
+    }
+    #smileloc-tree .title .bottom-text {
+        width: 100%;
     }
 }
                     
@@ -2202,7 +2211,7 @@ overflow-y: hidden;
     }
 }
 @media (max-width: 768px) {
-    #management-member .bio {
+    .management-member .bio {
         padding-right: 0;
         text-align: justify;
     }
@@ -2322,7 +2331,7 @@ overflow-y: hidden;
         }
 }
 @media (max-width: 768px) {
-    #board-member .bio {
+    .board-member .bio {
         padding-right: 0;
         text-align: justify;
     }
