@@ -1,15 +1,7 @@
-//Glitches: 
-//      - Swiper Double Scrolls through some slides... Why?
-//      - White Background (looks like from vid 3) flickers into the lower pages... why?
-//      - Sometimes the videos don't play again after going back into viewBox 
-//      - Possibly because of incorrect Swiper Size
-//      - Video doesn't resize smoothly. Possibly because of wrong comparison
-
 var mfp_container;
-
-
-
+console.log('clicked');
 document.addEventListener('click', function() {
+  console.log('clicked');
     mfp_container = document.querySelector(".pop-vid"); 
     mfp_all = document.querySelectorAll(".pop-vid");
   document.addEventListener('click', function(event) {
@@ -36,6 +28,8 @@ var el;
   var bg = document.getElementById("bgvideo");
   var bg2 = document.getElementById("bgvideo2");
   var bg3 = document.getElementById("bgvideo3");
+  var bg22 = document.getElementById("bgvideo22");
+  var bg33 = document.getElementById("bgvideo33");
   /*IF mfp-close is pressed, pause video*/
   function pauseVid() {
      bg.pause();
@@ -47,18 +41,24 @@ var el;
   
   function pauseVid2() {
     bg2.pause();
+    bg22.pause();
  }
  function playVid2() {
      bg2.currentTime= 0;
      bg2.play();
+     bg22.currentTime= 0;
+     bg22.play();
  }
 
  function pauseVid3() {
   bg3.pause();
+  bg33.pause();
 }
 function playVid3() {
    bg3.currentTime= 0;
    bg3.play();
+   bg33.currentTime= 0;
+   bg33.play();
 }
   function loadVid() {
     document.querySelectorAll(".pop-vid").load();
@@ -117,13 +117,7 @@ var page_8 = document.querySelector('#page8');
 var page_9 = document.querySelector('#page9');
 
 window.addEventListener('load', function () {
-document.addEventListener('click', function() {
-  if(isInViewport(page_3)) {
-    playVid3();
-  } else {
-    pauseVid3();
-  }
-}, false);
+
 
 swiper.on('resize', function() {
     if (swiper.height > bg.style.height) {
@@ -183,8 +177,6 @@ const swiper = new Swiper('.swiper-main', {
     shortSwipes: true,
 
     forceToAxis: true,
-    preventClicks: true,
-    preventClicksPropagation: true,
     preventInteractionOnTransition: true,
 
     // If we need pagination
@@ -217,13 +209,16 @@ const swiper = new Swiper('.swiper-main', {
     },
     
     breakpoints: {
-
+      480: {
+        noSwiping: false,
+      },
+  
       992: {
-        noSwiping: true,
+        noSwiping: false,
       },
   
       1024: {
-        noSwiping: true
+        noSwiping: false
       },
       1920 : {
         noSwiping: true
@@ -242,11 +237,12 @@ const carousel = new Swiper('.s-carousel', {
   spaceBetween: 20,
   direction: 'horizontal',
   maxBackfaceHiddenSlides: 20,
-
-  navigation: {
+  prevButton: '#cab-prev',
+    nextButton: '#cab-next',
+ /*  navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
+  }, */
 
   autoplay: {
     delay: 5000,
@@ -260,7 +256,6 @@ $('#nav-logo').click(swiper,function(){
 })
 
 
-/* 
 function keepCentered() {
   var w = document.querySelector("#bgvideo2").clientWidth;
   var windowWidth = window.innerWidth;
@@ -270,7 +265,7 @@ function keepCentered() {
       obj.style.transform = "";
     }
 }
-window.addEventListener('resize', keepCentered); */
+window.addEventListener('resize', keepCentered);
 
 /* 
 function fontScale() {
