@@ -521,7 +521,7 @@ svg g text {
         height: calc(100vh - 80px);
     }
     #page2 .credit-video {
-        font-size: 13px;
+        font-size: 11px;
     }
 }
 
@@ -604,9 +604,9 @@ svg g text {
     .mobile-head {
         display: block;
         position: absolute;
-        top: 45px;
+        top: 15px;
         left: 20px;
-        font-size: max(18px, 4vw);
+        font-size: max(8px, 3vw);
     }
     .credit-video {
         top: calc(85vh - 80px);
