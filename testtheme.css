@@ -1755,10 +1755,12 @@ overflow-y: hidden;
                 left: 50%;
             }
             @media (max-width: 992px) {
-                #page-1 #right-box .gif {
-                    left: 45%;}
+		#page-1 .gif {
+		    top: 30%;}
+                #page-1 .gif {
+                    left: 50%;}
                 #page-1 p { 
-                    margin-top: 415px;
+                    margin-top: 75px;
                 } 
             }
     #page-1 .pop-thumbnail {
@@ -1766,6 +1768,16 @@ overflow-y: hidden;
 @media (max-width: 768px) {
     #page-1 .column {
         margin-bottom: 40px;
+        float: none;
+    }
+    #page-1 .row-wrap{
+        height: auto;
+    }
+    #page-1 .pop-thumbnail {
+        width: 100%;
+    }
+    #page-1 .gif {
+        font-size: 35px;
     }
 }
 
@@ -2071,7 +2083,7 @@ overflow-y: hidden;
             display: flex;
             flex-flow: column;
             margin-bottom: 0;
-            height: 1200px;}
+            height: 1300px;}
             #img-pikos {
                 order: 1;}
                 #CAB-page .row-wrap .caption.wu {
