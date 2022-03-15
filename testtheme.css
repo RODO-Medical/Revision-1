@@ -345,12 +345,7 @@ svg g text {
     -webkit-backface-visibility: hidden;
     transform: translateZ(0);
     }
-@media (max-width:1024px) {
-        @media(max-aspect-ratio: 2/1) {
-        .swiper-slide {
-            transform: translateY(-6%);
-        }
-        }}
+
 .gif {
     position: absolute;
     top: 40%;
@@ -522,7 +517,7 @@ svg g text {
     }
     #page2 .linkTech {
         font-size: 16px;
-        top: calc(83vh - 80px);
+        top: calc(81vh - 80px);
     }
     #page2 .under img {
         width: 73%;
@@ -596,7 +591,7 @@ svg g text {
         line-height: 5.7vh;
         font-size: 2.5vw;
         margin-left: 4.4vw;
-        top: calc(80vh - 80px);
+        top: calc(79vh - 80px);
     }
     #mobile-head {
         display: block;
@@ -606,7 +601,7 @@ svg g text {
         font-size: max(18px, 4vw);
     }
     .credit-video {
-        top: calc(86vh - 80px);
+        top: calc(85vh - 80px);
     }
 
 
