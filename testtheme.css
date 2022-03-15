@@ -1502,9 +1502,9 @@ overflow-y: hidden;
             display: inline-block;}
         #smileloc-tree .title .bottom-text{
             position: relative;
-            font-size: 20px;
+            font-size: 16px;
             clear: right;
-            width: auto;
+            width: calc(100% - 365px);
             display: inline-block;
             vertical-align: middle;}
             #smileloc-tree .title .bottom-text a {
@@ -1523,10 +1523,11 @@ overflow-y: hidden;
                 text-align: left;}
             #smileloc-tree .info p {
                 text-align: left;
+                width: 120%;
                 font-family: 'Rotunda', sans-serif;
                 font-weight: 400;
-                font-size: 0.9vw;
-                margin-top: 15px;
+                font-size: 0.8vw;
+                margin-top: 10px;
                 margin-bottom: 60px;}
             #smileloc-tree .info video {
                 width: 100%;
@@ -1560,12 +1561,12 @@ overflow-y: hidden;
         width: 80%;
     }
     .col-lg-36 {
-        width: 36%;
+        width: 29%;
         padding-left: 0;
         float: left;
     }
     #smileloc-tree .col-lg-64 {
-        width: 64%;
+        width: 70%;
         float: left;
         padding: 0 25px;
     }
@@ -1587,9 +1588,9 @@ overflow-y: hidden;
         width: 33%;
     }
     #smileloc-tree .info-text a {
-        line-height: 2.4vw;
-        font-size: 16px;
-        color: #004AC3}
+        text-decoration: underline;
+        font-size: 18px;
+        }
         #smileloc-tree .info-text a>i {
             margin-left: 20px;
             font-size: 15px;
@@ -1680,7 +1681,6 @@ overflow-y: hidden;
         padding-left: 0;
     }
 }
-
                     
 #page-1 {
     position: relative;
