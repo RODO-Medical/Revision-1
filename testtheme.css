@@ -1711,7 +1711,12 @@ overflow-y: hidden;
         font-size: 40px;
     }
 }
-                    
+@media (max-width: 499px) {
+    #smileloc-tree .title .bar {
+        display: none;
+    }
+}
+
 #page-1 {
     position: relative;
     margin-top: 80px;
