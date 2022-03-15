@@ -568,6 +568,9 @@ svg g text {
     font-weight: normal;
     letter-spacing: 0.185vw;
 }
+.page3 .toggle {
+    display: none;
+}
 @media (max-width: 768px) {
     #bgvideo3 {
         height: calc(100vh - 80px);
@@ -578,12 +581,25 @@ svg g text {
         left: 86.2vw;
     }
     .page3 {
-        width: 92.71vw;
-        height: 5.41vh;
-        line-height: 5.7vh;
+        width: 91.71vw;
+        height: 7.41vh;
+        line-height: 2vh;
         font-size: 2.5vw;
         margin-left: 4.4vw;
-        top: calc(79vh - 80px);
+        padding-top: 2vh;
+        top: calc(77vh - 80px);
+    }
+    .page3 .large {
+        font-size: 2.5vh;
+    }
+    .page3 .bar {
+        display: none;
+    }
+    .page3 .smaller {
+        font-size: 1.65vh;
+    }
+    .page3 .toggle {
+        display: block;
     }
     .mobile-head {
         display: block;
