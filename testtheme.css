@@ -2070,6 +2070,7 @@ overflow-y: hidden;
                 #CAB-page .row-wrap .caption.pikos {
                     text-align: center;}
             #CAB-page .img-wrap {
+		margin-top: 30px;
                 margin-bottom: 20px;}
             #CAB-page .swiper-button-prev {
                 top: 50%;}
