@@ -1686,6 +1686,7 @@ overflow-y: hidden;
     }
     #smileloc-tree .info p {
         font-size: 16px;
+	width: 100%;
     }
     #smileloc-tree #lyscan {
         width: 100%;
