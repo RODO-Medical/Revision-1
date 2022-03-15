@@ -72,9 +72,9 @@
             <ul class="nav navbar-nav mr-auto navbar-right">
                 <li><a href="Technology.html" class="linkTech">THE Technology</a></li>
                 <li><a href="TheTeam.html">THE Team</a></li>
-                <li><a href="Resource.html">Resources</a></li>
+                <li><a href="#">Resources</a></li>
                 <li><a href="News.html">News</a></li>
-                <li class="icons"><a href="#"><img src="Icon awesome-instagram.svg"></a><a href="#"><img src="Icon awesome-facebook-square.svg"></a> <a href="#"><img src="Icon simple-tiktok.svg"></a></li>
+                <li class="icons"><a href="#"><img src="Icon awesome-instagram.svg"></a><a href="#"><img src="Icon awesome-facebook-square.svg"></a></li>
                 <li id="no-collapse"><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
             </ul>
             </div><!-- /.navbar-collapse -->
@@ -100,19 +100,21 @@
         <a href="#leoyang" class="button more" id="ly-vid" onclick="loadVid();"><img class="pop-thumbnail" src="PastedGraphic-9.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
         <p><span>Dr. Leo Yang</span><br>Smileloc Delivery and Removal Video</p>
         <div id="leoyang" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
-            <video playsinline controls id="ly-inter" class="pop-vid" src="RODO - Dr. Leo Yang - Interview Compressed.mp4" >
+            <video playsinline controls id="ly-inter" class="pop-vid" src="video/RODO - Dr. Leo Yang - Interview Compressed.mp4" >
             </video>
         </div>
     </div>
     <div class="vidPic c">
-        <a href="#stevelim" class="button more" id="sl-vid" onclick="loadVid();"><img class="pop-thumbnail" src="PastedGraphic-10.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
-        <p><span>Dr. Steve Lim</span><br>Center for Advanced Dentistry Video</p>
-        <div id="stevelim" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
-            <video playsinline controls id="sl-inter" class="pop-vid" src="Center For Advanced Dentistry Steve Lim.mp4" >
-            </video>
-        </div>
+      <a href="#grantolsen" class="button more" id="go-vid"><img class="pop-thumbnail" src="PastedGraphic-13.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
+      <p><span>Dr. Grant Olsen</span><br>Changing the HOLE Industry with Smileloc</p>
+      <div id="grantolsen" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+          
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/GvVqwfQZL58" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
     </div>
-
     <div class="vidPic d">
         <a href="#kowalski" class="button more" id="bjk-vid"><img class="pop-thumbnail" src="PastedGraphic-11.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
         <p><span>BJ Kowalski, President of ROE Dental Laboratory</span><br>We're changing the HOLE Dentistry: Smileloc</p>
@@ -136,16 +138,13 @@
         </div>
     </div>
     <div class="vidPic f">
-        <a href="#grantolsen" class="button more" id="go-vid"><img class="pop-thumbnail" src="PastedGraphic-13.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
-        <p><span>Dr. Grant Olsen</span><br>Changing the HOLE Industry with Smileloc</p>
-        <div id="grantolsen" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
-            
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/GvVqwfQZL58" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-        </div>
-    </div>
+      <a href="#stevelim" class="button more" id="sl-vid" onclick="loadVid();"><img class="pop-thumbnail" src="PastedGraphic-10.png"><i class="fas fa-play gif" aria-hidden="true"></i></a>
+      <p><span>Dr. Steve Lim</span><br>Center for Advanced Dentistry Video</p>
+      <div id="stevelim" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+          <video playsinline controls id="sl-inter" class="pop-vid" src="Center For Advanced Dentistry Steve Lim.mp4" >
+          </video>
+      </div>
+  </div>
   </div>
 <!-- 
     <div class="quote">
@@ -241,7 +240,7 @@
   </section> -->
   <section id="publications">
       <div class="title">
-          Publications &nbsp;| &nbsp; <span>Smileloc has been proven for device safety and efficacy in benchtop testing and clinical trials.</span>
+          Publications &nbsp;<span class="bar">|</span> &nbsp; <span>Smileloc has been proven for device safety and efficacy in benchtop testing and clinical trials.</span>
       </div>
       
       <div class="swiper publication-scroll">
@@ -249,13 +248,13 @@
               <div id="jpd" class="group sole col-lg-6 col-xs-12">
                   <div class="article">
                     <div class="full col-lg-2 col-xs-12">
-                      <img width="100%" src="JPD.svg" />
+                      <img class="untoggle" width="100%" src="JPD.svg" />
                      </div>
                     <a target="_blank" href="https://www.thejpd.org/article/S0022-3913(16)30275-X/abstract">
                       <div class="col-xs-1">  
                         <img class="pdf-icon" src="Icon feather-external-link.svg" />
                       </div>
-                      <div class="headline col-lg-9 col-xs-11 col-xs-11">
+                      <div class="headline col-lg-9 col-xs-11">
                           Clinical application of a shape memory implant abutment system<br>
                           <span class="source">                      
                             The Journal of Prosthetic Dentistry
@@ -278,7 +277,7 @@
                    </a>
                   </div>
                   <div class="article">
-                    <div class="col-lg-2 col-xs-12"></div>
+                    <div class="col-lg-2 col-xs-12"><img class="toggle" width="100%" src="JPD.svg" /></div>
                    <a target="_blank" href="https://www.thejpd.org/article/S0022-3913(19)30417-2/abstract">
                     <div class="col-xs-1"> 
                       <img class="pdf-icon" src="Icon feather-external-link.svg" />
@@ -321,28 +320,10 @@
                  </a>
                 </div>  
             <div id="float-right" class="col-lg-6 col-xs-12">
-              <div id="joi" class="group">
-                <div class="article">
-                  <div class="full col-lg-2 col-xs-12">
-                    <img  height="100%" src="JOI.svg" />
-                  </div>
-                  <a >
-                    <div class="col-xs-1">
-                      <img class="pdf-icon" src="Icon feather-external-link.svg" />
-                    </div>
-                  <div class="headline col-lg-9 col-xs-11">
-                    Shape-memory alloy abutment system for retention of single-tooth and implant bridge prostheses in the posterior maxilla<br>
-                    <span class="source">
-                      Journal of Oral Implantology
-                    </span>
-                  </div>
-                  </a>
-                </div>
-              </div>
               <div class="group">
                 <div class="has-logo article">
-                  <div class="full col-lg-2 col-xs-12">
-                    <img class="other" width="100%" src="oral_maxillofacial_surgery.svg" />
+                  <div id="omsc" class="full col-lg-2 col-xs-12">
+                    <img class="other" width="80%" src="oral_maxillofacial_surgery.svg" />
                   </div>
                   <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1042369919300226">
                   <div class="col-xs-1">
@@ -371,10 +352,28 @@
                   </a>
                 </div>
               </div>
+              <div id="joi" class="group">
+                <div class="article">
+                  <div class="full col-lg-2 col-xs-12">
+                    <img  width="75%" src="JOI.svg" />
+                  </div>
+                  <a >
+                    <div class="col-xs-1">
+                      <img class="pdf-icon" src="Icon feather-external-link.svg" />
+                    </div>
+                  <div class="headline col-lg-9 col-xs-11">
+                    Shape-memory alloy abutment system for retention of single-tooth and implant bridge prostheses in the posterior maxilla<br>
+                    <span class="source">
+                      Journal of Oral Implantology
+                    </span>
+                  </div>
+                  </a>
+                </div>
+              </div>
               <div class="group">
                 <div class="has-logo article">
                   <div class="full col-lg-2 col-xs-12">
-                    <img id="dbpia" class="other" width="100%" src="DBpia.svg" />
+                    <img id="dbpia" class="other" width="68%" src="DBpia.svg" />
                   </div>
                  <a target="_blank" href="http://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE06667830">
                   <div class="col-xs-1">
@@ -390,14 +389,14 @@
                 </div>
               </div>
             </div>  
-            <div class="col-lg-6 col-xs-12">
+            <div class="col-lg-6 col-xs-12 doc">
               <div class="group">
                 <div class="has-logo article">
                   <div class="full col-lg-2 col-xs-12">
-                    <img class="other" id="smileloc" width="50%" src="rodomedical-logo-sm.png" />
-                    <img class="other" id="toggle" width="50%" src="rodomedical-logo.png" />
+                    <img class="other" id="smileloc" width="100%" src="Smileloc Logo B&W.svg" />
+                    <img class="other" id="toggle" width="50%" src="Smileloc Logo B&W.svg" />
                   </div>
-                  <a target="_blank" href="Accuracy and tolerance of RODO abutment critical dimensions.pdf">
+                  <a target="_blank" href="documents/Accuracy and tolerance of RODO abutment critical dimensions.pdf">
                     <div class="col-xs-1">
                       <img class="pdf-icon" src="pdf.svg" />
                     </div>
@@ -412,10 +411,10 @@
               </div>
               <div class="group">
                 <div class="article">
-                  <div class="col-lg-2 col-xs-12" style="height:30px;">
+                  <div class="col-lg-2 col-xs-12" style="height:15px;">
                     <img src="" />
                   </div>
-                  <a target="_blank" href="Assessment of Nickel Ion Release from Smileloc Sleeves.pdf">
+                  <a target="_blank" href="documents/Assessment of Nickel Ion Release from Smileloc Sleeves.pdf">
                     <div class="col-xs-1">
                       <img class="pdf-icon" src="pdf.svg" />
                     </div>
@@ -425,6 +424,7 @@
                         RODO Medical
                       </span>
                     </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -432,9 +432,9 @@
               <div class="group">
                 <div class="article">
                   <div class="col-lg-2 col-xs-12">
-                    <img class="other toggle" width="50%" src="rodomedical-logo-sm.png" />
+                    <img class="other toggle" width="100%" src="Smileloc Logo B&W.svg" />
                   </div>
-                  <a target="_blank" href="Corrosion Resistance of Smileloc Exposed to the Oral Environment.pdf">
+                  <a target="_blank" href="documents/Corrosion Resistance of Smileloc Exposed to the Oral Environment.pdf">
                     <div class="col-xs-1">
                       <img class="pdf-icon" src="pdf.svg" />
                     </div>
@@ -449,8 +449,8 @@
               </div>
               <div class="group">
                 <div class="article">
-                  <a target="_blank" href="Intra-Oral Temperatures During Unlocking of Smileloc.pdf">
-                    <div class="col-lg-2 col-xs-12" style="height:0px;"></div>
+                  <div class="col-lg-2 col-xs-12" style="height:10px;"></div>
+                  <a target="_blank" href="documents/Temperatures During Unlocking of Smileloc.pdf">
                     <div class="col-xs-1">
                       <img class="pdf-icon" src="pdf.svg" />
                     </div>
@@ -465,19 +465,6 @@
               </div>
             </div>  
           </div>
-      </div>
-      <div class="bottom-notif">
-        <div class="arrow-wrap">
-          <div class="down-arrow">
-            <svg width="30" height="35">
-              <rect width="30" height="5" fill="black"/>
-            </svg>
-          </div>
-          <div class="toggle" >
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-        </div>
-        Scroll for More
       </div>
   </section>
   <section id="FAQ">
@@ -697,7 +684,7 @@
             <span>A: </span> If the implant company refuses to honor their warranty for the implant &#40;exclusively due to the use of the 
             Products&#41;, and the Clinician both meets the “Eligibility" criteria, then RODO will reimburse the Clinician for the actual 
             and verifiable purchase cost of a replacement implant. Reference RODO Warranty Terms and Conditions for full coverage details
-            at <a href="http://rodomedical.com/terms-and-conditions/.">http://rodomedical.com/terms-and-conditions/</a>.
+            at <a target="_blank" href="http://rodomedical.com/terms-and-conditions/.">http://rodomedical.com/terms-and-conditions/</a>.
           </div>
         </div>
       </div>
