@@ -624,7 +624,7 @@ svg g text {
 
 
 #page4 {
-    background-image: url('images/topography.svg');
+    background-image: url('topography.svg');
     background-repeat: no-repeat;
     background-color:  #051B27;
 }
@@ -1333,7 +1333,7 @@ button.mfp-close {
             display: block;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
-            background: url("images/rodomedical-logo-sm.png") no-repeat;
+            background: url("rodomedical-logo-sm.png") no-repeat;
             width: 40px;
             height: 51px;
             padding-left: 180px;}
