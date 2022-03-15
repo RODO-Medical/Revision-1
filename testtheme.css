@@ -599,7 +599,7 @@ svg g text {
 
 
 
-   /*  #bgvideo2, #bgvideo3 {
+       #bgvideo2, #bgvideo3 {
         filter: blur(10px);}
         #bgvideo3 {
             transform: translateX(-50%);
@@ -611,7 +611,7 @@ svg g text {
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-    } */
+    } 
 }
 
 
