@@ -2520,11 +2520,13 @@ overflow-y: hidden;
 @media (max-width: 441px) {
     #experts h1 {
         font-size: 40px;
+	width: 85.2vw;
     }
     #experts h1 .bar {
         margin: 0 0px;
         font-size: 36px;
     }
+    
 }
 
 
