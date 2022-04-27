@@ -2922,6 +2922,102 @@ margin-top: 200px;
     margin: 0 20px 0 10px;
 }
 
+#Data {
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+#Data .title {
+    font-size: 36px;
+    text-align: left;
+    width: 75.2%;
+    margin: auto;}
+    #Data .title span.bar {
+        font-family: 'RotundaThin', sans-serif;}
+    #Data .subtext {
+        font-size: 18px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 65%;}
+#Data .row {
+    font-size: 28px;
+    margin: 120px auto 0;
+    width:75.2%;
+    text-align: left;
+}
+#Data .col-lg-6 {
+    padding: 0;
+}
+    #Data .col-wrapper {
+        width: 80%;
+    }
+    #Data img.thumb {
+        width: 12.375%;
+        float: left;
+    }
+    #Data .article{
+        font-size: 18px;
+        text-align: left;
+        width: 82%;
+        float: left;
+        margin-left: 5%;}
+        #Data .article .head {
+            font-family: "RotundaMedium", sans-serif;}
+        #Data .article .body {
+            font-family: "RotundaThin", sans-serif;
+        }
+        #Data .claim {
+            display: flex;
+            text-align: center;}
+        #Data .subrow {
+            margin-top: 10px;
+        }
+        #Data .dataSlide img {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .fs-img {
+            width: 100%;
+        }
+        #Data .dataSlide img:hover {
+            cursor: zoom-in;
+        }
+            #Data .swiper-button-next {
+                transform: translate(0);
+                top: 55%;
+            }
+            #Data .swiper-button-prev {
+                transform: translate(0);
+                left: -8%;
+                top: 55%;
+            }
+            #Data .bold {
+                font-family: 'Rotunda', sans-serif;
+                font-weight: 700;
+                font-size: 40px;
+                flex: 1;}
+            #Data .labels {
+                font-size: 16px;
+                flex: 1;}
+                #Data .labels span {
+                    font-size: 14px;
+                    display: inline-block;
+                    width: 70%;
+                }
+                #Data .labels .constrain {
+                    font-size: 16px;
+                    width: 60%;
+                }
+            #Data .chart {
+                margin-top: 15px;
+            }
+            @media (max-width: 1199px) {
+                #Data .caption {
+                    margin-top: 50px;
+                }
+            }
+
+
 #FAQ {
     position: relative;
     font-family: 'RotundaMedium', sans-serif;
